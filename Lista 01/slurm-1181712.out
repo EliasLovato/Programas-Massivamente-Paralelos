@@ -1,0 +1,20 @@
+sdumont1243
+sdumont1243
+ldd: /scratch/padinpe/elias.lovato/pname: Arquivo ou diretório não encontrado
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/pname: No such file or directory
+srun: error: sdumont1243: tasks 0-15: Exited with exit code 2

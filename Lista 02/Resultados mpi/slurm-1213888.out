@@ -1,0 +1,23 @@
+sdumont1243
+sdumont1243
+	linux-vdso.so.1 =>  (0x00007ffdd3571000)
+	libpapi.so.5 => /opt/bullxde/perftools/papi/5.5.1.0/lib64/libpapi.so.5 (0x00002b75657f5000)
+	libmpifort.so.12 => /opt/intel/parallel_studio_xe_2020/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/libmpifort.so.12 (0x00002b7565ab2000)
+	libmpi.so.12 => /opt/intel/parallel_studio_xe_2020/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release/libmpi.so.12 (0x00002b7565e71000)
+	libdl.so.2 => /usr/lib64/libdl.so.2 (0x00002b756708d000)
+	librt.so.1 => /usr/lib64/librt.so.1 (0x00002b7567291000)
+	libpthread.so.0 => /usr/lib64/libpthread.so.0 (0x00002b7567499000)
+	libm.so.6 => /usr/lib64/libm.so.6 (0x00002b75676b5000)
+	libgcc_s.so.1 => /usr/lib64/libgcc_s.so.1 (0x00002b75679b7000)
+	libc.so.6 => /usr/lib64/libc.so.6 (0x00002b7567bcd000)
+	libpfm.so.4 => /opt/bullxde/perftools/papi/5.5.1.0/lib64/libpfm.so.4 (0x00002b7567f9a000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b75655d1000)
+	libfabric.so.1 => /opt/intel/parallel_studio_xe_2020/compilers_and_libraries_2020.2.254/linux/mpi/intel64/libfabric/lib/libfabric.so.1 (0x00002b756837c000)
+[0] All done: x=0.000577
+[1] All done: x=0.000408
+[2] All done: x=0.000333
+[3] All done: x=0.000289
+[4] All done: x=0.000258
+[5] All done: x=0.000236
+[6] All done: x=0.000218
+[7] All done: x=0.000204

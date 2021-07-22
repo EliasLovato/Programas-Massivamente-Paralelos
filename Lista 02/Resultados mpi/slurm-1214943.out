@@ -1,0 +1,71 @@
+sdumont1243
+sdumont1243
+	linux-vdso.so.1 =>  (0x00007fffb2914000)
+	libpapi.so.5 => /opt/bullxde/perftools/papi/5.5.1.0/lib64/libpapi.so.5 (0x00002addc6532000)
+	libmpifort.so.12 => /opt/intel/parallel_studio_xe_2020/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/libmpifort.so.12 (0x00002addc67ef000)
+	libmpi.so.12 => /opt/intel/parallel_studio_xe_2020/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release/libmpi.so.12 (0x00002addc6bae000)
+	libdl.so.2 => /usr/lib64/libdl.so.2 (0x00002addc7dca000)
+	librt.so.1 => /usr/lib64/librt.so.1 (0x00002addc7fce000)
+	libpthread.so.0 => /usr/lib64/libpthread.so.0 (0x00002addc81d6000)
+	libm.so.6 => /usr/lib64/libm.so.6 (0x00002addc83f2000)
+	libgcc_s.so.1 => /usr/lib64/libgcc_s.so.1 (0x00002addc86f4000)
+	libc.so.6 => /usr/lib64/libc.so.6 (0x00002addc890a000)
+	libpfm.so.4 => /opt/bullxde/perftools/papi/5.5.1.0/lib64/libpfm.so.4 (0x00002addc8cd7000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002addc630e000)
+	libfabric.so.1 => /opt/intel/parallel_studio_xe_2020/compilers_and_libraries_2020.2.254/linux/mpi/intel64/libfabric/lib/libfabric.so.1 (0x00002addc90b9000)
+
+Rank process 0, all done: x = 0.000577
+
+Apos primeira leitura dos counters
+PAPI_TOT_CYC: 228276348, PAPI_TOT_INS: 348002408, PAPI_FP_INS: 116000807
+Apos segunda leitura dos counters
+PAPI_TOT_CYC: 57008400, PAPY_TOT_INS: 87000679, PAPI_FP_INS: 29000181
+
+Rank process 1, all done: x = 0.000408
+
+Apos primeira leitura dos counters
+PAPI_TOT_CYC: 456382783, PAPI_TOT_INS: 696002509, PAPI_FP_INS: 232001643
+Apos segunda leitura dos counters
+PAPI_TOT_CYC: 114012619, PAPY_TOT_INS: 174000706, PAPI_FP_INS: 58000424
+
+Rank process 2, all done: x = 0.000333
+
+Apos primeira leitura dos counters
+PAPI_TOT_CYC: 684507630, PAPI_TOT_INS: 1044002608, PAPI_FP_INS: 348002360
+Apos segunda leitura dos counters
+PAPI_TOT_CYC: 171019848, PAPY_TOT_INS: 261000735, PAPI_FP_INS: 87000575
+
+Rank process 3, all done: x = 0.000289
+
+Apos primeira leitura dos counters
+PAPI_TOT_CYC: 912807701, PAPI_TOT_INS: 1392002709, PAPI_FP_INS: 464003135
+Apos segunda leitura dos counters
+PAPI_TOT_CYC: 228032520, PAPY_TOT_INS: 348000764, PAPI_FP_INS: 116000715
+
+Rank process 4, all done: x = 0.000258
+
+Apos primeira leitura dos counters
+PAPI_TOT_CYC: 1142100711, PAPI_TOT_INS: 1740002810, PAPI_FP_INS: 580004099
+Apos segunda leitura dos counters
+PAPI_TOT_CYC: 285043710, PAPY_TOT_INS: 435000792, PAPI_FP_INS: 145000907
+
+Rank process 5, all done: x = 0.000236
+
+Apos primeira leitura dos counters
+PAPI_TOT_CYC: 1369182886, PAPI_TOT_INS: 2088003038, PAPI_FP_INS: 696005777
+Apos segunda leitura dos counters
+PAPI_TOT_CYC: 342042325, PAPY_TOT_INS: 522000820, PAPI_FP_INS: 174001146
+
+Rank process 6, all done: x = 0.000218
+
+Apos primeira leitura dos counters
+PAPI_TOT_CYC: 1597326887, PAPI_TOT_INS: 2436003011, PAPI_FP_INS: 812005602
+Apos segunda leitura dos counters
+PAPI_TOT_CYC: 399049276, PAPY_TOT_INS: 609000847, PAPI_FP_INS: 203001453
+
+Rank process 7, all done: x = 0.000204
+
+Apos primeira leitura dos counters
+PAPI_TOT_CYC: 1825483874, PAPI_TOT_INS: 2784003110, PAPI_FP_INS: 928006381
+Apos segunda leitura dos counters
+PAPI_TOT_CYC: 456070610, PAPY_TOT_INS: 696000894, PAPI_FP_INS: 232001687

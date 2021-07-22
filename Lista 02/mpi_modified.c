@@ -8,6 +8,8 @@
 #define NUM_EVENTS 3
 #define SIZE 1000000
 
+int m;
+
 void exit(int), do_flops(double *, int);
 
 int main(int argc, char* argv[]){
@@ -28,7 +30,7 @@ int main(int argc, char* argv[]){
 	MPI_Comm_rank(MPI_COMM_WORLD, &myid);
 	
 // Initializations
-	int m = myid + 1;
+	m = myid + 1;
 	double x = 0.5;
 	
 // Warmup and start counting events

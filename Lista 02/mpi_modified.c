@@ -46,8 +46,8 @@ int main(int argc, char* argv[]){
 		do_flops(&x, 4*SIZE);
 	
 	printf("\nRank process %d, all done: x = %lf\n", myid, x);
-	printf("\nApos primeira leitura dos conunters\nPAPI_TOT_CYC: %lld, PAPI_TOT_INS: %lld, PAPI_FP_INS: %lld\n", avalues[0], avalues[1], avalues[2]);
-	printf("\nApos segunda leitura dos counters\nPAPI_TOT_CYC: %lld, PAPY_TOT_INS: %lld, PAPI_FP_INS: %lld\n", bvalues[0], bvalues[1], bvalues[2]);
+	printf("\nApos primeira leitura dos counters\nPAPI_TOT_CYC: %lld, PAPI_TOT_INS: %lld, PAPI_FP_INS: %lld\n", avalues[0], avalues[1], avalues[2]);
+	printf("Apos segunda leitura dos counters\nPAPI_TOT_CYC: %lld, PAPY_TOT_INS: %lld, PAPI_FP_INS: %lld\n", bvalues[0], bvalues[1], bvalues[2]);
 		
 // Finalize the MPI environment
 	MPI_Finalize();

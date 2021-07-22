@@ -1,0 +1,31 @@
+#!/bin/bash
+#SBATCH --nodes=1		# utiliza um único nó!
+#SBATCH --ntasks-per-node=8
+#SBATCH --ntasks=8		# Numero total de processos MPI
+#SBATCH -p cpu_dev		# Fila (partition) "econômica" (até 4 nós, 96 cores)
+#SBATCH -J mpi_modified		# Nome job de sua escolha
+#SBATCH --time=00:02:00 	# Limita tempo em 2 minutos
+#SBATCH --exclusive		# Utilização exclusiva do nó ao executar job
+
+# Exibe os nós alocados para o job
+
+echo $SLURM_JOB_NODELIST
+nodeset -e $SLURM_JOB_NODELIST
+
+cd $SLURM_SUBMIT_DIR
+
+# Configura os compiladores para a suite de compiladores e MPI desejada:
+
+module load intel_psxe/2020
+module load papi
+module load papi-devel
+
+# Configura/define o executável
+
+EXEC=/scratch/padinpe/elias.lovato/CAP-399/mpi_modified
+
+# Exibe informações sobre o executável
+
+/usr/bin/ldd $EXEC
+
+srun -n $SLURM_NTASKS $EXEC	# Executa!

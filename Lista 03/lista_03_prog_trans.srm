@@ -20,7 +20,7 @@ module load intel_psxe/2020
 
 # Configura/define o executável
 
-EXEC=/prj/padinpe/elias.lovato/Programas_Massivamente_Paralelos/Lista\ 03/prog-trans
+EXEC=/scratch/padinpe/elias.lovato/CAP-399/prog-trans
 
 # Exibe informações sobre o executável
 

@@ -1,0 +1,10 @@
+sdumont1266
+sdumont1266
+	linux-vdso.so.1 =>  (0x00007fff6fef9000)
+	libm.so.6 => /usr/lib64/libm.so.6 (0x00002b33bdbc9000)
+	libpthread.so.0 => /usr/lib64/libpthread.so.0 (0x00002b33bdecb000)
+	libc.so.6 => /usr/lib64/libc.so.6 (0x00002b33be0e7000)
+	libgcc_s.so.1 => /usr/lib64/libgcc_s.so.1 (0x00002b33be4b4000)
+	libdl.so.2 => /usr/lib64/libdl.so.2 (0x00002b33be6ca000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b33bd9a5000)
+ N=        1024  T=  3.273963928222656E-003  Rate=   610.880279638800      MB/s

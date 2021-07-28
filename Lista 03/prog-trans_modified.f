@@ -1,15 +1,17 @@
         program transpose
         
         IMPLICIT NONE
-        INCLUDE 'f90papi.h'
+	INCLUDE 'f90papi.h'
 
         double precision, allocatable :: a(:,:)
         double precision, allocatable :: b(:,:)
         double precision t1, t2, fn, rate, mysecond
         
-        INTEGER, DIMENSION(5) :: events = (/PAPI_LD_INS, PAPI_SR_INS, PAPI_L1_TCM, PAPI_L2_TCM, PAPI_L3_TCM/)
+        INTEGER, DIMENSION(5) :: events = &
+	&(/PAPI_LD_INS, PAPI_SR_INS, PAPI_L1_TCM, PAPI_L2_TCM, PAPI_L3_TCM/)
         INTEGER*8, DIMENSION(5) :: avalues
         INTEGER*8, DIMENSION(5) :: bvalues
+	INTEGER :: check
 
         call pegavalor(N)
         fn = n

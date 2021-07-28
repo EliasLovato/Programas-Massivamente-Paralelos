@@ -1,4 +1,4 @@
-        subroutine inicia(a,b,n)
+        subroutinea inicia(a,b,n)
         double precision a(n,n),b(n,n)
         do i=1,n
                 do j=1,n

@@ -9,7 +9,7 @@ program transpose
 	
 	INTEGER, DIMENSION(5) :: events = (/PAPI_LD_INS, PAPI_SR_INS, PAPI_L1_TCM, PAPI_L2_TCM, PAPI_L3_TCM/)
 	INTEGER*8, DIMENSION(5) :: avalues, bvalues
-	INTEGER :: I, J, K, L, N, check, stride_i, stride_j
+	INTEGER :: I, J, N, K, L, check, strideI, strideJ
 	INTEGER, PARAMETER :: M = 256
 	
 	CALL pegavalor(N)
@@ -27,8 +27,8 @@ program transpose
 	
 	DO K = 1, N, stride_j
 		DO L = 1, N, stride_i
-			DO J = K, min(N, K + stride_j - 1)
-				DO I = L, min(N, L + stride_i - 1)
+			DO J = K, min(N, K + strideJ - 1)
+				DO I = L, min(N, L + strideI - 1)
 					B(I, J) = A(J, I)
 				ENDDO
 			ENDDO

@@ -13,12 +13,12 @@ program transpose
 	INTEGER, PARAMETER :: M = 256
 	
 	CALL pegavalor(N)
-	fn = N
+	fn = n
 	
-	ALLOCATE (a(N, N))
-	ALLOCATE (b(N, N))
+	ALLOCATE ( a(N, N) )
+	ALLOCATE ( b(N, N) )
 	
-	CALL inicia(a, b, N)
+	CALL inicia(A, B, N)
 	
 	t1 = mysecond()
 	
@@ -35,17 +35,17 @@ program transpose
 		ENDDO
 	ENDDO
 	
-	CALL PAPIF_read_counters(bvalues, 5, check)
+	CALL PAPIF_read_counters(avalues, 5, check)
 	IF (check .ne. PAPI_OK) STOP
 	
 	t2 = mysecond()
 	
-	rate = 2*fn*fn/(1024*1024*(t2 - t1))
+	rate=2*fn*fn/(1024*1024*(t2-t1))
 	
-	CALL confere(A, B, N)
+	CALL confere(A,B,N)
 	
 	PRINT *,"N =",N," T=",t2-t1," Rate=",rate,"MB/s"
-	PRINT *,"PAPI_LD_INS=",bvalues(1)," PAPI_SR_INS",bvalues(2)," PAPI_L1_TCM=",bvalues(3)," PAPI_L2_TCM=",bvalues(4)," PAPI_L3_TCM=", bvalues(5)
+	PRINT *,"PAPI_LD_INS=",avalues(1)," PAPI_SR_INS",avalues(2)," PAPI_L1_TCM=",avalues(3)," PAPI_L2_TCM=",avalues(4)," PAPI_L3_TCM=", avalues(5)
 	
 	STOP
 END 

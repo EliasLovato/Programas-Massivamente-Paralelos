@@ -1,0 +1,15 @@
+sdumont1243
+sdumont1243
+	linux-vdso.so.1 =>  (0x00007fffd3fbc000)
+	libpapi.so.5 => /opt/bullxde/perftools/papi/5.5.1.0/lib64/libpapi.so.5 (0x00002b40c7c04000)
+	libm.so.6 => /usr/lib64/libm.so.6 (0x00002b40c7ec1000)
+	libpthread.so.0 => /usr/lib64/libpthread.so.0 (0x00002b40c81c3000)
+	libc.so.6 => /usr/lib64/libc.so.6 (0x00002b40c83df000)
+	libgcc_s.so.1 => /usr/lib64/libgcc_s.so.1 (0x00002b40c87ac000)
+	libdl.so.2 => /usr/lib64/libdl.so.2 (0x00002b40c89c2000)
+	libpfm.so.4 => /opt/bullxde/perftools/papi/5.5.1.0/lib64/libpfm.so.4 (0x00002b40c8bc6000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b40c79e0000)
+ N=        2048  T=  5.723094940185547E-002  Rate=   139.784506173868      MB/s
+ PAPI_LD_INS=               4202601  PAPI_SR_INS=               2097648 
+  PAPI_L1_TCM=               4767283  PAPI_L2_TCM=               4715957 
+  PAPI_L3_TCM=               3628045

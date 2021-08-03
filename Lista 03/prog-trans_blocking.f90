@@ -9,7 +9,7 @@ program transpose
 	
 	INTEGER, DIMENSION(5) :: events = (/PAPI_LD_INS, PAPI_SR_INS, PAPI_L1_TCM, PAPI_L2_TCM, PAPI_L3_TCM/)
 	INTEGER*8, DIMENSION(5) :: avalues, bvalues
-	INTEGER :: I, J, K, L, N, stride_i, stride_j
+	INTEGER :: I, J, K, L, N, check, stride_i, stride_j
 	INTEGER, PARAMETER :: M = 256
 	
 	CALL pegavalor(N)
@@ -35,7 +35,7 @@ program transpose
 		ENDDO
 	ENDDO
 	
-	CALL PAPI_read_counters(bvalues, 5, check)
+	CALL PAPIF_read_counters(bvalues, 5, check)
 	IF (check .ne. PAPI_OK) STOP
 	
 	t2 = mysecond()

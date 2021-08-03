@@ -1,0 +1,20 @@
+sdumont1243
+sdumont1243
+	linux-vdso.so.1 =>  (0x00007ffe1e9ee000)
+	libpapi.so.5 => /opt/bullxde/perftools/papi/5.5.1.0/lib64/libpapi.so.5 (0x00002acb80feb000)
+	libm.so.6 => /usr/lib64/libm.so.6 (0x00002acb812a8000)
+	libpthread.so.0 => /usr/lib64/libpthread.so.0 (0x00002acb815aa000)
+	libc.so.6 => /usr/lib64/libc.so.6 (0x00002acb817c6000)
+	libgcc_s.so.1 => /usr/lib64/libgcc_s.so.1 (0x00002acb81b93000)
+	libdl.so.2 => /usr/lib64/libdl.so.2 (0x00002acb81da9000)
+	libpfm.so.4 => /opt/bullxde/perftools/papi/5.5.1.0/lib64/libpfm.so.4 (0x00002acb81fad000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002acb80dc7000)
+forrtl: severe (71): integer divide by zero
+Image              PC                Routine            Line        Source             
+prog-trans_blocki  000000000040545B  Unknown               Unknown  Unknown
+libpthread-2.17.s  00002B1E46BE45D0  Unknown               Unknown  Unknown
+prog-trans_blocki  0000000000403DDF  Unknown               Unknown  Unknown
+prog-trans_blocki  0000000000403A62  Unknown               Unknown  Unknown
+libc-2.17.so       00002B1E46E133D5  __libc_start_main     Unknown  Unknown
+prog-trans_blocki  0000000000403969  Unknown               Unknown  Unknown
+srun: error: sdumont1243: task 0: Exited with exit code 71

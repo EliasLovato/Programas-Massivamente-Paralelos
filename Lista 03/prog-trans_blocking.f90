@@ -25,8 +25,8 @@ program transpose
 	CALL PAPIF_start_counters(events, 5, check)
 	IF (check .ne. PAPI_OK) STOP
 	
-	DO K = 1, N, stride_j
-		DO L = 1, N, stride_i
+	DO K = 1, N, strideJ
+		DO L = 1, N, strideI
 			DO J = K, min(N, K + strideJ - 1)
 				DO I = L, min(N, L + strideI - 1)
 					B(I, J) = A(J, I)

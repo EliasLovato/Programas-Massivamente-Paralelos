@@ -10,7 +10,7 @@ program transpose
 	INTEGER, DIMENSION(5) :: events = (/PAPI_LD_INS, PAPI_SR_INS, PAPI_L1_TCM, PAPI_L2_TCM, PAPI_L3_TCM/)
 	INTEGER*8, DIMENSION(5) :: avalues, bvalues
 	INTEGER :: I, J, N, K, L, check, strideI, strideJ
-	INTEGER, PARAMETER :: M = 256
+	INTEGER, PARAMETER :: M = 1024
 	
 	CALL pegavalor(N)
 	fn = n

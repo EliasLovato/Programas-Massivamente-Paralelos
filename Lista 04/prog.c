@@ -7,7 +7,7 @@
 
 int main(int argc, char *argv[]) {
 	double sum=0.0, t1, t2, f(), mysecond();
-	int i, n=N, nt=1;
+	int i, n=N, nt=omp_get_num_threads();
 
 	if (argc>1) nt = atoi(argv[1]);
 	if (nt<0) {

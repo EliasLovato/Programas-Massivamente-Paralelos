@@ -4,7 +4,7 @@
 #SBATCH --ntasks=1              # Numero total de processos MPI
 #SBATCH --cpus-per-task=1       # Definir número de threads (até 24)
 #SBATCH -p cpu_dev		# Fila (partition) "econômica" (até 4 nós, 96 cores)
-#SBATCH -J prog_cyclic                 # Nome job de sua escolha
+#SBATCH -J prog2_static         # Nome job de sua escolha
 #SBATCH --time=00:02:00  	# Limita tempo em 2 minutos
 #SBATCH --exclusive		# Utilização exclusiva do nó ao executar job
 
@@ -21,7 +21,7 @@ module load gcc/8.3
 
 # Configura/define o executável
 
-EXEC=/scratch/padinpe/elias.lovato/CAP-399/Lista_04/prog
+EXEC=/scratch/padinpe/elias.lovato/CAP-399/Lista_04/prog2
 
 # Exibe informações sobre o executável
 
@@ -29,7 +29,7 @@ EXEC=/scratch/padinpe/elias.lovato/CAP-399/Lista_04/prog
 
 # Configura o número de threads conforme o parâmetro acima do SLURM
 
-export OMP_SCHEDULE="dynamic"
+export OMP_SCHEDULE="static"
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
 # Imprime o número de threads

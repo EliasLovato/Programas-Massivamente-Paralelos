@@ -21,7 +21,7 @@ module load gcc/8.3
 
 # Configura/define o executável
 
-EXEC=/scratch/padinpe/elias.lovato/CAP-399/Lista\ 04/prog
+EXEC=/scratch/padinpe/elias.lovato/CAP-399/Lista_04/prog
 
 # Exibe informações sobre o executável
 

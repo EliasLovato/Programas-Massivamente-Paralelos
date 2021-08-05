@@ -1,0 +1,10 @@
+sdumont1243
+sdumont1243
+/tmp/slurmd/job1275702/slurm_script: line 16: cd: /scratch/padinpe/elias.lovato/CAP-399/Lista: Arquivo ou diretório não encontrado
+/scratch/padinpe/elias.lovato/CAP-399/Lista:
+ldd: /scratch/padinpe/elias.lovato/CAP-399/Lista: Arquivo ou diretório não encontrado
+04/prog:
+ldd: 04/prog: Arquivo ou diretório não encontrado
+1
+slurmstepd: error: execve(): /scratch/padinpe/elias.lovato/CAP-399/Lista: No such file or directory
+srun: error: sdumont1243: task 0: Exited with exit code 2

@@ -1,0 +1,11 @@
+sdumont1247
+sdumont1247
+	linux-vdso.so.1 =>  (0x00007ffc519be000)
+	libm.so.6 => /usr/lib64/libm.so.6 (0x00002af618585000)
+	libgomp.so.1 => /scratch/app/gcc/8.3/lib64/libgomp.so.1 (0x00002af618887000)
+	libpthread.so.0 => /usr/lib64/libpthread.so.0 (0x00002af618ab5000)
+	libc.so.6 => /usr/lib64/libc.so.6 (0x00002af618cd1000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002af618361000)
+	libdl.so.2 => /usr/lib64/libdl.so.2 (0x00002af61909e000)
+1
+Num_threads=1, Time=16.966096

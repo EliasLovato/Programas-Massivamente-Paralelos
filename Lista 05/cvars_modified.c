@@ -3,7 +3,7 @@
 
 // Lengths for statically allocated character arrays
 #define MAX_NAME_LEN 128
-#define MAS_DESC_LEN 1024
+#define MAX_DESC_LEN 1024
 
 int main(int argc, char *argv[]){
 	int myid, numprocs;
@@ -13,16 +13,13 @@ int main(int argc, char *argv[]){
 	
 	MPI_T_enum	enumtype;
 	MPI_Datatype	datatype;
-
-// Initialize the MPI environmnt
-	MPI_Init(&argc, &argv);
+		
+	MPI_Init_thread(0, 0, required, &provided);
+	MPI_T_init_thread(required, &provided);
 	
 // Get the number processes and get the rank of the process
 	MPI_Comm_size(MPI_COMM_WORLD, &numprocs);
 	MPI_Comm_rank(MPI_COMM_WORLD, &myid);
-	
-	MPI_Init_thread(0, 0, required, &provided);
-	MPI_T_init_thread(required, &provided);
 	
 	int getValue_int_comm(int index, MPI_Comm comm, int *val){
 		int err, count;

@@ -27,8 +27,8 @@ int main(int argc, char *argv[]){
 		descLen = sizeof(desc);
 		
 		err = MPI_T_pvar_get_info(i, name, &nameLen, &verbosity, &var_class, &datatype, &enumtype, desc, &descLen, &binding, &readonly, &continuous, &atomic);
-		
-		printf("\t%s\tClass=%d\tReadonly=%s\tContinuous=%s\tAtomic=%s\t%s\n", name, var_class, readonly ? "T" : "F", continuous ? "T" : "F", atomic ? "T" : "F", desc);
+
+		printf("\t%-32s\t%s\n", name, desc);		
 	}
 		
 // No test on return because we're about to exit

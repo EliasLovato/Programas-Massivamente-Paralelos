@@ -1,0 +1,39 @@
+sdumont1246
+sdumont1246
+	linux-vdso.so.1 =>  (0x00007ffc24bfe000)
+	libmpifort.so.12 => /opt/intel/parallel_studio_xe_2020/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/libmpifort.so.12 (0x00002b15cff92000)
+	libmpi.so.12 => /opt/intel/parallel_studio_xe_2020/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release/libmpi.so.12 (0x00002b15d0351000)
+	libdl.so.2 => /usr/lib64/libdl.so.2 (0x00002b15d156d000)
+	librt.so.1 => /usr/lib64/librt.so.1 (0x00002b15d1771000)
+	libpthread.so.0 => /usr/lib64/libpthread.so.0 (0x00002b15d1979000)
+	libm.so.6 => /usr/lib64/libm.so.6 (0x00002b15d1b95000)
+	libgcc_s.so.1 => /usr/lib64/libgcc_s.so.1 (0x00002b15d1e97000)
+	libc.so.6 => /usr/lib64/libc.so.6 (0x00002b15d20ad000)
+	libfabric.so.1 => /opt/intel/parallel_studio_xe_2020/compilers_and_libraries_2020.2.254/linux/mpi/intel64/libfabric/lib/libfabric.so.1 (0x00002b15d247a000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b15cfd6e000)
+615 MPI Control Variables
+
+Processo: 1 - cvar: 64 
+I_MPI_HYDRA_HOSTS_GROUP         	This environment variable allows to set node ranges using brackets,$ commas, and dashes (like in Slurm* Workload Manager). @Default:# not defined
+ valor: 17237728 
+
+Processo: 1 - cvar: 65 
+I_MPI_PERHOST                   	Define the default behavior for the -perhost option of the mpiexec.hydra$ command.$ Syntax$ I_MPI_PERHOST=<value>$ Arguments$ <value> - Define a value used for -perhost by default$ -----------------------------------------------------------------------$ <integer > 0> - Exact value for the option$ <all>         - All logical CPUs on the node$ <allcores>    - All cores (physical CPUs) on the node. This is the$  default value.$ ----------------------------------------------------------------------- @Default:# not defined
+ valor: 17363184 
+
+Processo: 1 - cvar: 66 
+I_MPI_GTOOL                     	Specify the tools to be launched for selected ranks. An alternative to$ this variable is the -gtool option$ Syntax$ I_MPI_GTOOL="<command line for a tool 1>:<ranks set 1>[=exclusive]$ [@arch 1];<command line for a tool 2>:<ranks set 2>[=exclusive]$ [@arch 2]; … ;<command line for a tool n>:<ranks set n>[=exclusive]$ [@arch n]"$ Arguments$ <arg> - Specify a tool launch command, including parameters.$ -----------------------------------------------------------------------$ <command line>     - Specify tool launch command, including parameters$ <rank set>         - Specify the range of ranks that are involved in the$  tool execution. Separate ranks with a comma or use the '-' symbol for$ a set ofcontiguous ranks. To run the tool forall ranks, use the all$  argument.$ [=exclusive]       - All cores (physical CPUs) on the node. This is$ the default value.$ [@arch]            - Specify the architecture on which the tool runs$  optional). For a given <rank set>, if you specify this argument,$ the tool is launched
+ valor: 17364736 
+615 MPI Control Variables
+
+Processo: 0 - cvar: 64 
+I_MPI_HYDRA_HOSTS_GROUP         	This environment variable allows to set node ranges using brackets,$ commas, and dashes (like in Slurm* Workload Manager). @Default:# not defined
+ valor: 13029168 
+
+Processo: 0 - cvar: 65 
+I_MPI_PERHOST                   	Define the default behavior for the -perhost option of the mpiexec.hydra$ command.$ Syntax$ I_MPI_PERHOST=<value>$ Arguments$ <value> - Define a value used for -perhost by default$ -----------------------------------------------------------------------$ <integer > 0> - Exact value for the option$ <all>         - All logical CPUs on the node$ <allcores>    - All cores (physical CPUs) on the node. This is the$  default value.$ ----------------------------------------------------------------------- @Default:# not defined
+ valor: 13020896 
+
+Processo: 0 - cvar: 66 
+I_MPI_GTOOL                     	Specify the tools to be launched for selected ranks. An alternative to$ this variable is the -gtool option$ Syntax$ I_MPI_GTOOL="<command line for a tool 1>:<ranks set 1>[=exclusive]$ [@arch 1];<command line for a tool 2>:<ranks set 2>[=exclusive]$ [@arch 2]; … ;<command line for a tool n>:<ranks set n>[=exclusive]$ [@arch n]"$ Arguments$ <arg> - Specify a tool launch command, including parameters.$ -----------------------------------------------------------------------$ <command line>     - Specify tool launch command, including parameters$ <rank set>         - Specify the range of ranks that are involved in the$  tool execution. Separate ranks with a comma or use the '-' symbol for$ a set ofcontiguous ranks. To run the tool forall ranks, use the all$  argument.$ [=exclusive]       - All cores (physical CPUs) on the node. This is$ the default value.$ [@arch]            - Specify the architecture on which the tool runs$  optional). For a given <rank set>, if you specify this argument,$ the tool is launched
+ valor: 13149968 

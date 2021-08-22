@@ -25,7 +25,7 @@ int main(int argc, char *argv[]){
 	MPI_T_cvar_get_num(&num_cvar);
 	printf("%d MPI Control Variables\n", num_cvar);
 	
-	for(i=0; i<3; i++){
+	for(i=64; i<67; i++){
 		nameLen = sizeof(name);
 		descLen = sizeof(desc);
 		

@@ -6,41 +6,45 @@
 #define MAX_DESC_LEN 1024
 
 int main(int argc, char *argv[]){
-	int myid, numprocs;
+	int myid, count, val;
 	int i, num_cvar, nameLen, verbosity, descLen, binding;
 	int required = MPI_THREAD_SINGLE, provided, err, scope;
 	char name[MAX_NAME_LEN], desc[MAX_DESC_LEN];
 	
-	MPI_T_enum	enumtype;
-	MPI_Datatype	datatype;
+	MPI_T_enum		enumtype;
+	MPI_Datatype		datatype;
+	MPI_T_cvar_handle	handle;
+	MPI_Comm 		comm;
+	void *comm, *val;
 		
 	MPI_Init_thread(0, 0, required, &provided);
 	MPI_T_init_thread(required, &provided);
 	
-// Get the number processes and get the rank of the process
-	MPI_Comm_size(MPI_COMM_WORLD, &numprocs);
+// Get the rank of the process
 	MPI_Comm_rank(MPI_COMM_WORLD, &myid);
 	
-	int getValue_int_comm(int index, MPI_Comm comm, int *val){
-		int err, count;
+	MPI_T_cvar_get_num(&num_cvar);
+	printf("%d MPI Control Variables\n", num_cvar);
+	
+	for(i=0; i<3; i++){
+		nameLen = sizeof(name);
+		descLen = sizeof(desc);
 		
-		MPI_T_cvar_handle	handle;
+		err = MPI_T_cvar_get_info(i, name, &nameLen, &verbosity, &datatype, &enumtype, desc, &descLen, &binding, &scope);
 		
 // This example assumes that the variable index can be bound to a communicator
-		err = MPI_T_cvar_handle_alloc(index, &comm, &handle, &count);
+		err = MPI_T_cvar_handle_alloc(i, &comm, &handle, &count);
 		
-		if(err != MPI_SUCCESS) return err;
-		
-// The following assumes that the variable is represented by a single integer
+		val = (int *)malloc(count * sizeof(int));
+
+// The following assumes that the variable is represented by a single integer		
 		err = MPI_T_cvar_read(handle, val);
 		
-		if(err != MPI_SUCCESS) return err;
+		printf("\nProcesso: %d - cvar: %d \n%-32s\t%s\n valor: %d \n", myid, i, name, desc, val);
 		
 		err = MPI_T_cvar_handle_free(&handle);
-		
-		return err;
 	}
-	
+		
 // No test on return because we're about to exit
 	MPI_T_finalize();
 

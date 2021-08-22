@@ -6,7 +6,7 @@
 #define MAX_DESC_LEN 1024
 
 int main(int argc, char *argv[]){
-	int myid, count, val;
+	int myid, count;
 	int i, num_cvar, nameLen, verbosity, descLen, binding;
 	int required = MPI_THREAD_SINGLE, provided, err, scope;
 	char name[MAX_NAME_LEN], desc[MAX_DESC_LEN];
@@ -14,7 +14,6 @@ int main(int argc, char *argv[]){
 	MPI_T_enum		enumtype;
 	MPI_Datatype		datatype;
 	MPI_T_cvar_handle	handle;
-	MPI_Comm 		comm;
 	void *comm, *val;
 		
 	MPI_Init_thread(0, 0, required, &provided);

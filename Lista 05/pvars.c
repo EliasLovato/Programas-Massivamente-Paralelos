@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "mpi.h"
 
 // Lengths for statically allocated character arrays
@@ -14,7 +15,6 @@ int main(int argc, char *argv[]){
 	
 	MPI_T_enum		enumtype;
 	MPI_Datatype		datatype;
-	MPI_Comm		comm;
 		
 	MPI_Init_thread(0, 0, required, &provided);
 	MPI_T_init_thread(required, &provided);
@@ -28,7 +28,7 @@ int main(int argc, char *argv[]){
 		
 		err = MPI_T_pvar_get_info(i, name, &nameLen, &verbosity, &var_class, &datatype, &enumtype, desc, &descLen, &binding, &readonly, &continuous, &atomic);
 		
-		printf("\t%s\tClass=%d\tReadonly=%s\tContinuous=%s\tAtomic=%s\t%s\n", name, var_class, readonly ? "T" : "F", desc);
+		printf("\t%s\tClass=%d\tReadonly=%s\tContinuous=%s\tAtomic=%s\t%s\n", name, var_class, readonly ? "T" : "F", continuous ? "T" : "F", atomic ? "T" : "F", desc);
 	}
 		
 // No test on return because we're about to exit

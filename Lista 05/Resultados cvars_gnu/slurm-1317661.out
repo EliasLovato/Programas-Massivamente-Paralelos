@@ -1,0 +1,1172 @@
+sdumont1244
+sdumont1244
+	linux-vdso.so.1 =>  (0x00007fff4a3b1000)
+	libmpi.so.40 => /scratch/app/openmpi/4.0_gnu/lib/libmpi.so.40 (0x00002b8c120cb000)
+	libpthread.so.0 => /usr/lib64/libpthread.so.0 (0x00002b8c12580000)
+	libc.so.6 => /usr/lib64/libc.so.6 (0x00002b8c1279c000)
+	liblustreapi.so => /usr/lib64/liblustreapi.so (0x00002b8c12b69000)
+	libopen-rte.so.40 => /scratch/app/openmpi/4.0_gnu/lib/libopen-rte.so.40 (0x00002b8c12d9b000)
+	libopen-pal.so.40 => /scratch/app/openmpi/4.0_gnu/lib/libopen-pal.so.40 (0x00002b8c130d1000)
+	libucp.so.0 => /usr/lib64/libucp.so.0 (0x00002b8c13616000)
+	libucm.so.0 => /usr/lib64/libucm.so.0 (0x00002b8c1385e000)
+	libucs.so.0 => /usr/lib64/libucs.so.0 (0x00002b8c13a70000)
+	libuct.so.0 => /usr/lib64/libuct.so.0 (0x00002b8c13dc4000)
+	librdmacm.so.1 => /usr/lib64/librdmacm.so.1 (0x00002b8c14048000)
+	libibverbs.so.1 => /usr/lib64/libibverbs.so.1 (0x00002b8c14264000)
+	libpmi2.so.0 => /usr/lib64/libpmi2.so.0 (0x00002b8c1447d000)
+	libpmi.so.0 => /usr/lib64/libpmi.so.0 (0x00002b8c14696000)
+	libdl.so.2 => /usr/lib64/libdl.so.2 (0x00002b8c1489c000)
+	librt.so.1 => /usr/lib64/librt.so.1 (0x00002b8c14aa0000)
+	libm.so.6 => /usr/lib64/libm.so.6 (0x00002b8c14ca8000)
+	libutil.so.1 => /usr/lib64/libutil.so.1 (0x00002b8c14faa000)
+	libz.so.1 => /usr/lib64/libz.so.1 (0x00002b8c151ad000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b8c11ea7000)
+	libmlx5.so.1 => /usr/lib64/libmlx5.so.1 (0x00002b8c153c3000)
+	libibcm.so.1 => /usr/lib64/libibcm.so.1 (0x00002b8c1561e000)
+	libnuma.so.1 => /usr/lib64/libnuma.so.1 (0x00002b8c15823000)
+	libnl-route-3.so.200 => /usr/lib64/libnl-route-3.so.200 (0x00002b8c15a2f000)
+	libnl-3.so.200 => /usr/lib64/libnl-3.so.200 (0x00002b8c15c9c000)
+	libslurm.so.31 => /usr/lib64/libslurm.so.31 (0x00002b8c15ebd000)
+	libgcc_s.so.1 => /usr/lib64/libgcc_s.so.1 (0x00002b8c16253000)
+1141 MPI Control Variables
+	mca_base_param_files            	Path for MCA configuration files containing variable values
+	mca_param_files                 	Path for MCA configuration files containing variable values
+	mca_base_override_param_file    	Variables set in this file will override any value set inthe environment or another configuration file
+	mca_base_suppress_override_warning	Suppress warnings when attempting to set an overridden value (default: false)
+	mca_base_param_file_prefix      	Aggregate MCA parameter file sets
+	mca_base_envar_file_prefix      	Aggregate MCA parameter file set for env variables
+	mca_base_param_file_path        	Aggregate MCA parameter Search path
+	mca_base_param_file_path_force  	Forced Aggregate MCA parameter Search path
+	opal_signal                     	Comma-delimited list of integer signal numbers to Open MPI to attempt to intercept.  Upon receipt of the intercepted signal, Open MPI will display a stack trace and abort.  Open MPI will *not* replace signals if handlers are already installed by the time MPI_INIT is invoked.  Optionally append ":complain" to any signal number in the comma-delimited list to make Open MPI complain if it detects another signal handler (and therefore does not insert its own).
+	opal_stacktrace_output          	Specifies where the stack trace output stream goes.  Accepts one of the following: none (disabled), stderr (default), stdout, file[:filename].   If 'filename' is not specified, a default filename of 'stacktrace' is used.  The 'filename' is appended with either '.PID' or '.RANK.PID', if RANK is available.  The 'filename' can be an absolute path or a relative path to the current working directory.
+	opal_net_private_ipv4           	Semicolon-delimited list of CIDR notation entries specifying what networks are considered "private" (default value based on RFC1918 and RFC3330)
+	opal_set_max_sys_limits         	Set the specified system-imposed limits to the specified value, including "unlimited".Supported params: core, filesize, maxmem, openfiles, stacksize, maxchildren
+	opal_built_with_cuda_support    	Whether CUDA GPU buffer support is built into library or not
+	opal_cuda_support               	Whether CUDA GPU buffer support is enabled or not
+	opal_warn_on_missing_libcuda    	Whether to print a message when CUDA support is enabled but libcuda is not found
+	mpi_leave_pinned                	Whether to use the "leave pinned" protocol or not.  Enabling this setting can help bandwidth performance when repeatedly sending and receiving large messages with the same buffers over RDMA-based networks (false = do not use "leave pinned" protocol, true = use "leave pinned" protocol, auto = allow network to choose at runtime).
+	opal_leave_pinned               	Whether to use the "leave pinned" protocol or not.  Enabling this setting can help bandwidth performance when repeatedly sending and receiving large messages with the same buffers over RDMA-based networks (false = do not use "leave pinned" protocol, true = use "leave pinned" protocol, auto = allow network to choose at runtime).
+	mpi_leave_pinned_pipeline       	Whether to use the "leave pinned pipeline" protocol or not.
+	opal_leave_pinned_pipeline      	Whether to use the "leave pinned pipeline" protocol or not.
+	mpi_warn_on_fork                	If nonzero, issue a warning if program forks under conditions that could cause system errors
+	opal_abort_delay                	If nonzero, print out an identifying message when abort operation is invoked (hostname, PID of the process that called abort) and delay for that many seconds before exiting (a negative delay value means to never abort).  This allows attaching of a debugger before quitting the job.
+	opal_abort_print_stack          	If nonzero, print out a stack trace when abort is invoked
+	mca_base_env_list               	Set SHELL env variables
+	mca_base_env_list_delimiter     	Set SHELL env variables delimiter. Default: semicolon ';'
+	mca_base_env_list_internal      	Store SHELL env variables from amca conf file
+	dss_buffer_type                 	Set the default mode for OpenRTE buffers (0=non-described, 1=described)
+	dss_buffer_initial_size         	
+	dss_buffer_threshold_size       	
+	mca_base_component_path         	Path where to look for additional components
+	mca_component_path              	Path where to look for additional components
+	mca_base_component_show_load_errors	Whether to show errors for components that failed to load or not
+	mca_component_show_load_errors  	Whether to show errors for components that failed to load or not
+	mca_base_component_track_load_errors	Whether to track errors for components that failed to load or not
+	mca_base_component_disable_dlopen	Whether to attempt to disable opening dynamic components or not
+	mca_component_disable_dlopen    	Whether to attempt to disable opening dynamic components or not
+	mca_base_verbose                	Specifies where the default error output stream goes (this is separate from distinct help messages).  Accepts a comma-delimited list of: stderr, stdout, syslog, syslogpri:<notice|info|debug>, syslogid:<str> (where str is the prefix string for all syslog notices), file[:filename] (if filename is not specified, a default filename is used), fileappend (if not specified, the file is opened for truncation), level[:N] (if specified, integer verbose level; otherwise, 0 is implied)
+	mca_verbose                     	Specifies where the default error output stream goes (this is separate from distinct help messages).  Accepts a comma-delimited list of: stderr, stdout, syslog, syslogpri:<notice|info|debug>, syslogid:<str> (where str is the prefix string for all syslog notices), file[:filename] (if filename is not specified, a default filename is used), fileappend (if not specified, the file is opened for truncation), level[:N] (if specified, integer verbose level; otherwise, 0 is implied)
+	dl                              	Default selection set of components for the dl framework (<none> means use all components that can be found)
+	dl_base_verbose                 	Verbosity level for the dl framework (default: 0)
+	dl_dlopen_filename_suffixes     	Comma-delimited list of filename suffixes that the dlopen component will try
+	dl_dlopen_major_version         	
+	dl_dlopen_minor_version         	
+	dl_dlopen_release_version       	
+	if                              	Default selection set of components for the if framework (<none> means use all components that can be found)
+	if_base_verbose                 	Verbosity level for the if framework (default: 0)
+	if_base_do_not_resolve          	If nonzero, do not attempt to resolve interfaces
+	if_base_retain_loopback         	If nonzero, retain loopback interfaces
+	if_linux_ipv6_major_version     	
+	if_linux_ipv6_minor_version     	
+	if_linux_ipv6_release_version   	
+	if_posix_ipv4_major_version     	
+	if_posix_ipv4_minor_version     	
+	if_posix_ipv4_release_version   	
+	mpi_param_check                 	Whether you want MPI API parameters checked at run-time or not.  Possible values are 0 (no checking) and 1 (perform checking at run-time)
+	mpi_yield_when_idle             	Yield the processor when waiting for MPI communication (for MPI processes, will default to 1 when oversubscribing nodes)
+	mpi_event_tick_rate             	How often to progress TCP communications (0 = never, otherwise specified in microseconds)
+	mpi_show_handle_leaks           	Whether MPI_FINALIZE shows all MPI handles that were not freed or not
+	mpi_no_free_handles             	Whether to actually free MPI objects when their handles are freed
+	mpi_show_mpi_alloc_mem_leaks    	If >0, MPI_FINALIZE will show up to this many instances of memory allocated by MPI_ALLOC_MEM that was not freed by MPI_FREE_MEM
+	mpi_show_mca_params             	Whether to show all MCA parameter values during MPI_INIT or not (good for reproducability of MPI jobs for debug purposes). Accepted values are all, default, file, api, and enviro - or a comma delimited combination of them
+	mpi_show_mca_params_file        	If mpi_show_mca_params is true, setting this string to a valid filename tells Open MPI to dump all the MCA parameter values into a file suitable for reading via the mca_param_files parameter (good for reproducability of MPI jobs)
+	mpi_preconnect_mpi              	Whether to force MPI processes to fully wire-up the MPI connections between MPI processes during MPI_INIT (vs. making connections lazily -- upon the first MPI traffic between each process peer pair)
+	mpi_preconnect_all              	Whether to force MPI processes to fully wire-up the MPI connections between MPI processes during MPI_INIT (vs. making connections lazily -- upon the first MPI traffic between each process peer pair)
+	mpi_have_sparse_group_storage   	Whether this Open MPI installation supports storing of data in MPI groups in "sparse" formats (good for extremely large process count MPI jobs that create many communicators/groups)
+	mpi_use_sparse_group_storage    	Whether to use "sparse" storage formats for MPI groups (only relevant if mpi_have_sparse_group_storage is 1)
+	mpi_cuda_support                	Whether CUDA GPU buffer support is enabled or not
+	mpi_built_with_cuda_support     	Whether CUDA GPU buffer support is built into library or not
+	mpi_add_procs_cutoff            	Maximum world size for pre-allocating resources for all remote processes. Increasing this limit may improve communication performance at the cost of memory usage
+	mpi_dynamics_enabled            	Is the MPI dynamic process functionality enabled (e.g., MPI_COMM_SPAWN)?  Default is yes, but certain transports and/or environments may disable it.
+	async_mpi_init                  	Do not perform a barrier at the end of MPI_Init
+	async_mpi_finalize              	Do not perform a barrier at the beginning of MPI_Finalize
+	mpi_abort_delay                 	If nonzero, print out an identifying message when abort operation is invoked (hostname, PID of the process that called abort) and delay for that many seconds before exiting (a negative delay value means to never abort).  This allows attaching of a debugger before quitting the job.
+	mpi_abort_print_stack           	If nonzero, print out a stack trace when abort is invoked
+	mpi_spc_attach                  	A comma delimeted string listing the software-based performance counters (SPCs) to enable.
+	mpi_spc_dump_enabled            	A boolean value for whether (true) or not (false) to enable dumping SPC counters in MPI_Finalize.
+	ompi_timing                     	Request that critical timing loops be measured
+	hook                            	Default selection set of components for the hook framework (<none> means use all components that can be found)
+	hook_base_verbose               	Verbosity level for the hook framework (default: 0)
+	rte                             	Default selection set of components for the rte framework (<none> means use all components that can be found)
+	rte_base_verbose                	Verbosity level for the rte framework (default: 0)
+	rte_orte_major_version          	
+	rte_orte_minor_version          	
+	rte_orte_release_version        	
+	hwloc                           	Default selection set of components for the hwloc framework (<none> means use all components that can be found)
+	hwloc_base_verbose              	Verbosity level for the hwloc framework (default: 0)
+	hwloc_base_mem_alloc_policy     	General memory allocations placement policy (this is not memory binding). "none" means that no memory policy is applied. "local_only" means that a process' memory allocations will be restricted to its local NUMA node. If using direct launch, this policy will not be in effect until after MPI_INIT. Note that operating system paging policies are unaffected by this setting. For example, if "local_only" is used and local NUMA node memory is exhausted, a new memory allocation may cause paging.
+	hwloc_base_mem_bind_failure_action	What Open MPI will do if it explicitly tries to bind memory to a specific NUMA location, and fails.  Note that this is a different case than the general allocation policy described by hwloc_base_alloc_policy.  A value of "silent" means that Open MPI will proceed without comment. A value of "warn" means that Open MPI will warn the first time this happens, but allow the job to continue (possibly with degraded performance).  A value of "error" means that Open MPI will abort the job if this happens.
+	hwloc_base_binding_policy       	Policy for binding processes. Allowed values: none, hwthread, core, l1cache, l2cache, l3cache, socket, numa, board, cpu-list ("none" is the default when oversubscribed, "core" is the default when np<=2, and "numa" is the default when np>2). Allowed qualifiers: overload-allowed, if-supported, ordered
+	hwloc_base_bind_to_core         	Bind processes to cores
+	hwloc_base_bind_to_socket       	Bind processes to sockets
+	hwloc_base_report_bindings      	Report bindings to stderr
+	hwloc_base_cpu_list             	Comma-separated list of ranges specifying logical cpus to be used by these processes [default: none]
+	hwloc_base_slot_list            	Comma-separated list of ranges specifying logical cpus to be used by these processes [default: none]
+	hwloc_base_cpu_set              	Comma-separated list of ranges specifying logical cpus to be used by these processes [default: none]
+	hwloc_base_use_hwthreads_as_cpus	Use hardware threads as independent cpus
+	hwloc_base_topo_file            	Read local topology from file instead of directly sensing it
+	hwloc_hwloc201_major_version    	
+	hwloc_hwloc201_minor_version    	
+	hwloc_hwloc201_release_version  	
+	memcpy                          	Default selection set of components for the memcpy framework (<none> means use all components that can be found)
+	memcpy_base_verbose             	Verbosity level for the memcpy framework (default: 0)
+	memchecker                      	Default selection set of components for the memchecker framework (<none> means use all components that can be found)
+	memchecker_base_verbose         	Verbosity level for the memchecker framework (default: 0)
+	backtrace                       	Default selection set of components for the backtrace framework (<none> means use all components that can be found)
+	backtrace_base_verbose          	Verbosity level for the backtrace framework (default: 0)
+	backtrace_execinfo_major_version	
+	backtrace_execinfo_minor_version	
+	backtrace_execinfo_release_version	
+	timer                           	Default selection set of components for the timer framework (<none> means use all components that can be found)
+	timer_base_verbose              	Verbosity level for the timer framework (default: 0)
+	timer_require_monotonic         	Node-level monotonic timer required (default yes)
+	timer_linux_major_version       	
+	timer_linux_minor_version       	
+	timer_linux_release_version     	
+	event                           	Default selection set of components for the event framework (<none> means use all components that can be found)
+	event_base_verbose              	Verbosity level for the event framework (default: 0)
+	event_libevent2022_event_include	Comma-delimited list of libevent subsystems to use (epoll, poll, select -- available on your platform)
+	opal_event_include              	Comma-delimited list of libevent subsystems to use (epoll, poll, select -- available on your platform)
+	event_libevent2022_major_version	
+	event_libevent2022_minor_version	
+	event_libevent2022_release_version	
+	shmem                           	Default selection set of components for the shmem framework (<none> means use all components that can be found)
+	shmem_base_verbose              	Verbosity level for the shmem framework (default: 0)
+	shmem_base_RUNTIME_QUERY_hint   	Internal OMPI parameter used to provide a component selection hint to the shmem framework.  The value of this parameter is the name of the component that is available, selectable, and meets our run-time behavior requirements.
+	shmem_mmap_priority             	Priority for shmem mmap component (default: 50)
+	shmem_mmap_enable_nfs_warning   	Enable the warning emitted when Open MPI detects that its shared memory backing file is located on a network filesystem (1 = enabled, 0 = disabled).
+	shmem_mmap_relocate_backing_file	Whether to change the default placement of backing files or not (Negative = try to relocate backing files to an area rooted at the path specified by shmem_mmap_backing_file_base_dir, but continue with the default path if the relocation fails, 0 = do not relocate, Positive = same as the negative option, but will fail if the relocation fails.
+	shmem_mmap_backing_file_base_dir	Specifies where backing files will be created when shmem_mmap_relocate_backing_file is in use.
+	shmem_mmap_major_version        	
+	shmem_mmap_minor_version        	
+	shmem_mmap_release_version      	
+	shmem_mmap_release_version      	
+	shmem_mmap_release_version      	
+	shmem_mmap_release_version      	
+	shmem_mmap_release_version      	
+	shmem_mmap_release_version      	
+	shmem_mmap_release_version      	
+	shmem_mmap_release_version      	
+	shmem_mmap_release_version      	
+	reachable                       	Default selection set of components for the reachable framework (<none> means use all components that can be found)
+	reachable_base_verbose          	Verbosity level for the reachable framework (default: 0)
+	reachable_weighted_major_version	
+	reachable_weighted_minor_version	
+	reachable_weighted_release_version	
+	opal_cr_verbose                 	Verbose output level for the runtime OPAL Checkpoint/Restart functionality
+	ft_cr_enabled                   	Enable fault tolerance for this program
+	opal_cr_enable_timer            	Enable Checkpoint timer (Default: Disabled)
+	opal_cr_enable_timer_barrier    	Enable Checkpoint timer Barrier. Must have opal_cr_enable_timer set. (Default: Disabled)
+	opal_cr_timer_target_rank       	Target Rank for the timer (Default: 0)
+	opal_cr_is_tool                 	Is this a tool program, meaning does it require a fully operational OPAL or just enough to exec.
+	opal_cr_signal                  	Checkpoint/Restart signal used to initialize an OPAL Only checkpoint of a program
+	opal_cr_debug_sigpipe           	Activate a signal handler for debugging SIGPIPE Errors that can happen on restart. (Default: Disabled)
+	opal_cr_tmp_dir                 	Temporary directory to place rendezvous files for a checkpoint
+	orte_base_help_aggregate        	If orte_base_help_aggregate is true, duplicate help messages will be aggregated rather than displayed individually.  This can be helpful for parallel jobs that experience multiple identical failures; rather than print out the same help/failure message N times, display it once with a count of how many processes sent the same message.
+	orte_tmpdir_base                	Base of the session directory tree to be used by all processes
+	orte_local_tmpdir_base          	Base of the session directory tree to be used by orterun/mpirun
+	orte_remote_tmpdir_base         	Base of the session directory tree on remote nodes, if required to be different from head node
+	orte_top_session_dir            	Top of the session directory tree for applications
+	orte_jobfam_session_dir         	The jobfamily session directory for applications
+	orte_no_session_dirs            	Prohibited locations for session directories (multiple locations separated by ',', default=NULL)
+	orte_create_session_dirs        	Create session directories
+	orte_execute_quiet              	Do not output error and help messages
+	orte_report_silent_errors       	Report all errors, including silent ones
+	orte_debug                      	Top-level ORTE debug switch (default: false)
+	orte_debug_verbose              	Verbosity level for ORTE debug messages (default: 1)
+	orte_debug_daemons_file         	Whether want stdout/stderr of daemons to go to a file or not
+	orte_debug_daemons              	Whether to debug the ORTE daemons or not
+	orte_progress_thread_debug      	Debug level for ORTE progress threads
+	orte_leave_session_attached     	Whether applications and/or daemons should leave their sessions attached so that any output can be received - this allows X forwarding without all the attendant debugging output
+	orte_in_parallel_debugger       	Whether the application is being debugged in a parallel debugger (default: false)
+	orte_output_debugger_proctable  	Whether or not to output the debugger proctable after launch (default: false)
+	orte_debugger_test_daemon       	Name of the executable to be used to simulate a debugger colaunch (relative or absolute path)
+	orte_debugger_test_attach       	Test debugger colaunch after debugger attachment
+	orte_debugger_check_rate        	Set rate (in secs) for auto-detect of debugger attachment (0 => do not check)
+	orte_do_not_launch              	Perform all necessary operations to prepare to launch the application, but do not actually launch it
+	orte_daemon_spin                	Have any orteds spin until we can connect a debugger to them
+	orte_daemon_fail                	Have the specified orted fail after init for debugging purposes
+	orte_daemon_fail_delay          	Have the specified orted fail after specified number of seconds (default: 0 => no delay)
+	orte_startup_timeout            	Seconds to wait for startup or job launch before declaring failed_to_start (default: 0 => do not check)
+	orte_base_user_debugger         	Sequence of user-level debuggers to search for in orterun
+	orte_default_hostfile           	Name of the default hostfile (relative or absolute path, "none" to ignore environmental or default MCA param setting)
+	orte_default_dash_host          	Default -host setting (specify "none" to ignore environmental or default MCA param setting)
+	orte_node_regex                 	Regular expression defining nodes in the system
+	orte_keep_fqdn_hostnames        	Whether or not to keep FQDN hostnames [default: no]
+	orte_retain_aliases             	Whether or not to keep aliases for host names [default: no]
+	orte_hostname_cutoff            	Pass hostnames to all procs when #nodes is less than cutoff [default:1000]
+	orte_hostname_alias_index       	If hostname aliases are being retained, which one to use for the debugger proc table [default: 1st alias]
+	orte_xml_output                 	Display all output in XML format (default: false)
+	orte_tag_output                 	Tag all output with [job,rank] (default: false)
+	orte_xml_file                   	Provide all output in XML format to the specified file
+	orte_timestamp_output           	Timestamp all application process output (default: false)
+	orte_show_resolved_nodenames    	Display any node names that are resolved to a different name (default: false)
+	orte_launch_agent               	Command used to start processes on remote nodes (default: orted)
+	orte_fork_agent                 	Command used to fork processes on remote nodes (default: NULL)
+	orte_allocation_required        	Whether or not an allocation by a resource manager is required [default: no]
+	orte_map_stddiag_to_stderr      	Map output from opal_output to stderr of the local process [default: no]
+	orte_map_stddiag_to_stdout      	Map output from opal_output to stdout of the local process [default: no]
+	orte_xterm                      	Create a new xterm window and display output from the specified ranks there [default: none]
+	orte_report_launch_progress     	Output a brief periodic report on launch progress [default: no]
+	orte_cpu_type                   	cpu type detected in node
+	orte_cpu_model                  	cpu model detected in node
+	orte_report_events              	URI to which events are to be reported (default: NULL)
+	orte_do_not_barrier             	Do not barrier in orte_init
+	orte_enable_recovery            	Enable recovery from process failure [Default = disabled]
+	orte_max_restarts               	Max number of times to restart a failed process
+	orte_abort_on_non_zero_status   	Abort the job if any process returns a non-zero exit status - no restart in such cases
+	orte_allowed_exit_without_sync  	Process exiting without calling finalize will not trigger job termination
+	orte_report_child_jobs_separately	Return the exit status of the primary job only
+	orte_stat_history_size          	Number of stat samples to keep
+	orte_no_vm                      	Do not build the VM at start to detect topologies
+	state_novm_select               	Do not build the VM at start to detect topologies
+	orte_max_vm_size                	Maximum size of virtual machine - used to subdivide allocation
+	orte_set_default_slots          	Set the number of slots on nodes that lack such info to the number of specified objects [a number, "cores" (default), "numas", "sockets", "hwthreads" (default if hwthreads_as_cpus is set), or "none" to skip this option]
+	orte_display_alloc              	Whether to display the allocation after it is determined
+	ras_base_display_alloc          	Whether to display the allocation after it is determined
+	orte_display_devel_alloc        	Whether to display a developer-detail allocation after it is determined
+	ras_base_display_devel_alloc    	Whether to display a developer-detail allocation after it is determined
+	orte_soft_locations             	Treat -host directives as desired, but not required
+	orte_daemon_cores               	Restrict the ORTE daemons (including mpirun) to operate on the specified cores (comma-separated list of ranges)
+	orte_coll_transports            	Comma-separated list of transports to use for ORTE collectives
+	orte_mgmt_transports            	Comma-separated list of transports to use for ORTE management messages
+	orte_timeout_for_stack_trace    	Seconds to wait for stack traces to return before terminating the job (<= 0 wait forever)
+	orte_fwd_mpirun_port            	Forward the port used by mpirun so all daemons will use it
+	pmix_server_uri                 	URI of a session-level keyval server for publish/lookup operations
+	orte_enable_instant_on_support  	Enable PMIx-based instant on launch support (experimental)
+	orte_hnp_uri                    	HNP contact info
+	orte_local_daemon_uri           	Daemon contact info
+	orte_app_num                    	Index of the app_context that defines this proc
+	orte_strip_prefix               	Prefix(es) to match when deciding whether to strip leading characters and zeroes from node names returned by daemons
+	orte_num_nodes                  	Number of nodes in the job
+	orte_num_restarts               	Number of times this proc has restarted
+	orte_app_rank                   	Rank of this proc within its app_context
+	orte_ess_node_rank              	Process node rank
+	schizo                          	Default selection set of components for the schizo framework (<none> means use all components that can be found)
+	schizo_base_verbose             	Verbosity level for the schizo framework (default: 0)
+	schizo_base_personalities       	Comma-separated list of personalities
+	schizo_flux_major_version       	
+	schizo_flux_minor_version       	
+	schizo_flux_release_version     	
+	schizo_ompi_major_version       	
+	schizo_ompi_minor_version       	
+	schizo_ompi_release_version     	
+	schizo_orte_major_version       	
+	schizo_orte_minor_version       	
+	schizo_orte_release_version     	
+	schizo_slurm_major_version      	
+	schizo_slurm_minor_version      	
+	schizo_slurm_release_version    	
+	ess                             	Default selection set of components for the ess framework (<none> means use all components that can be found)
+	ess_base_verbose                	Verbosity level for the ess framework (default: 0)
+	ess_base_stream_buffering       	Adjust buffering for stdout/stderr [-1 system default] [0 unbuffered] [1 line buffered] [2 fully buffered] (Default: -1)
+	ess_base_jobid                  	Process jobid
+	orte_ess_jobid                  	Process jobid
+	ess_base_vpid                   	Process vpid
+	orte_ess_vpid                   	Process vpid
+	ess_base_num_procs              	Used to discover the number of procs in the job
+	orte_ess_num_procs              	Used to discover the number of procs in the job
+	ess_base_forward_signals        	Comma-delimited list of additional signals (names or integers) to forward to application processes ["none" => forward nothing]. Signals provided by default include SIGTSTP, SIGUSR1, SIGUSR2, SIGABRT, SIGALRM, and SIGCONT
+	ess_hnp_forward_signals         	Comma-delimited list of additional signals (names or integers) to forward to application processes ["none" => forward nothing]. Signals provided by default include SIGTSTP, SIGUSR1, SIGUSR2, SIGABRT, SIGALRM, and SIGCONT
+	ess_pmi_major_version           	
+	ess_pmi_minor_version           	
+	ess_pmi_release_version         	
+	pmix                            	Default selection set of components for the pmix framework (<none> means use all components that can be found)
+	pmix_base_verbose               	Verbosity level for the pmix framework (default: 0)
+	pmix_base_async_modex           	Use asynchronous modex mode
+	pmix_base_collect_data          	Collect all data during modex
+	pmix_base_exchange_timeout      	Time (in seconds) to wait for a data exchange to complete
+	pmix_base_exchange_timeout      	Time (in seconds) to wait for a data exchange to complete
+	pmix_base_exchange_timeout      	Time (in seconds) to wait for a data exchange to complete
+	pmix_base_exchange_timeout      	Time (in seconds) to wait for a data exchange to complete
+	pmix_base_exchange_timeout      	Time (in seconds) to wait for a data exchange to complete
+	pmix_base_exchange_timeout      	Time (in seconds) to wait for a data exchange to complete
+	pmix_base_exchange_timeout      	Time (in seconds) to wait for a data exchange to complete
+	pmix_base_exchange_timeout      	Time (in seconds) to wait for a data exchange to complete
+	pmix_base_exchange_timeout      	Time (in seconds) to wait for a data exchange to complete
+	pmix_s1_priority                	Priority of the pmix s1 component (default: 10)
+	pmix_s1_major_version           	
+	pmix_s1_minor_version           	
+	pmix_s1_release_version         	
+	pmix_s1_release_version         	
+	pmix_s1_release_version         	
+	pmix_s1_release_version         	
+	pmix_s1_release_version         	
+	state                           	Default selection set of components for the state framework (<none> means use all components that can be found)
+	state_base_verbose              	Verbosity level for the state framework (default: 0)
+	state_base_check_fds            	Daemons should check fds for leaks after each job completes
+	state_app_major_version         	
+	state_app_minor_version         	
+	state_app_release_version       	
+	state_app_release_version       	
+	state_app_release_version       	
+	state_app_release_version       	
+	state_app_release_version       	
+	state_app_release_version       	
+	state_app_release_version       	
+	state_app_release_version       	
+	state_app_release_version       	
+	state_app_release_version       	
+	state_app_release_version       	
+	state_app_release_version       	
+	state_app_release_version       	
+	errmgr                          	Default selection set of components for the errmgr framework (<none> means use all components that can be found)
+	errmgr_base_verbose             	Verbosity level for the errmgr framework (default: 0)
+	errmgr_default_app_priority     	Priority of the default_app errmgr component
+	errmgr_default_app_major_version	
+	errmgr_default_app_minor_version	
+	errmgr_default_app_release_version	
+	errmgr_default_app_release_version	
+	errmgr_default_app_release_version	
+	errmgr_default_app_release_version	
+	errmgr_default_app_release_version	
+	errmgr_default_app_release_version	
+	errmgr_default_app_release_version	
+	errmgr_default_app_release_version	
+	errmgr_default_app_release_version	
+	errmgr_default_app_release_version	
+	errmgr_default_app_release_version	
+	errmgr_default_app_release_version	
+	errmgr_default_app_release_version	
+	routed                          	Default selection set of components for the routed framework (<none> means use all components that can be found)
+	routed_base_verbose             	Verbosity level for the routed framework (default: 0)
+	routed_binomial_major_version   	
+	routed_binomial_minor_version   	
+	routed_binomial_release_version 	
+	routed_debruijn_major_version   	
+	routed_debruijn_minor_version   	
+	routed_debruijn_release_version 	
+	routed_direct_major_version     	
+	routed_direct_minor_version     	
+	routed_direct_release_version   	
+	routed_radix                    	Radix to be used for routed radix tree
+	routed_radix_major_version      	
+	routed_radix_minor_version      	
+	routed_radix_release_version    	
+	oob                             	Default selection set of components for the oob framework (<none> means use all components that can be found)
+	oob_base_verbose                	Verbosity level for the oob framework (default: 0)
+	oob_base_num_progress_threads   	Number of independent progress OOB messages for each interface
+	oob_tcp_peer_limit              	Maximum number of peer connections to simultaneously maintain (-1 = infinite)
+	oob_tcp_peer_retries            	Number of times to try shutting down a connection before giving up
+	oob_tcp_sndbuf                  	TCP socket send buffering size (in bytes, 0 => leave system default)
+	oob_tcp_rcvbuf                  	TCP socket receive buffering size (in bytes, 0 => leave system default)
+	oob_tcp_if_include              	Comma-delimited list of devices and/or CIDR notation of TCP networks to use for Open MPI bootstrap communication (e.g., "eth0,192.168.0.0/16").  Mutually exclusive with oob_tcp_if_exclude.
+	oob_tcp_include                 	Comma-delimited list of devices and/or CIDR notation of TCP networks to use for Open MPI bootstrap communication (e.g., "eth0,192.168.0.0/16").  Mutually exclusive with oob_tcp_if_exclude.
+	oob_tcp_if_exclude              	Comma-delimited list of devices and/or CIDR notation of TCP networks to NOT use for Open MPI bootstrap communication -- all devices not matching these specifications will be used (e.g., "eth0,192.168.0.0/16").  If set to a non-default value, it is mutually exclusive with oob_tcp_if_include.
+	oob_tcp_exclude                 	Comma-delimited list of devices and/or CIDR notation of TCP networks to NOT use for Open MPI bootstrap communication -- all devices not matching these specifications will be used (e.g., "eth0,192.168.0.0/16").  If set to a non-default value, it is mutually exclusive with oob_tcp_if_include.
+	oob_tcp_static_ipv4_ports       	Static ports for daemons and procs (IPv4)
+	oob_tcp_dynamic_ipv4_ports      	Range of ports to be dynamically used by daemons and procs (IPv4)
+	oob_tcp_disable_ipv4_family     	Disable the IPv4 interfaces
+	oob_tcp_keepalive_time          	Idle time in seconds before starting to send keepalives (keepalive_time <= 0 disables keepalive functionality)
+	oob_tcp_keepalive_intvl         	Time between successive keepalive pings when peer has not responded, in seconds (ignored if keepalive_time <= 0)
+	oob_tcp_keepalive_probes        	Number of keepalives that can be missed before declaring error (ignored if keepalive_time <= 0)
+	oob_tcp_retry_delay             	Time (in sec) to wait before trying to connect to peer again
+	oob_tcp_max_recon_attempts      	Max number of times to attempt connection before giving up (-1 -> never give up)
+	oob_tcp_major_version           	
+	oob_tcp_minor_version           	
+	oob_tcp_release_version         	
+	rml                             	Default selection set of components for the rml framework (<none> means use all components that can be found)
+	rml_base_verbose                	Verbosity level for the rml framework (default: 0)
+	rml_base_max_retries            	Max #times to retry sending a message
+	rml_oob_major_version           	
+	rml_oob_minor_version           	
+	rml_oob_release_version         	
+	grpcomm                         	Default selection set of components for the grpcomm framework (<none> means use all components that can be found)
+	grpcomm_base_verbose            	Verbosity level for the grpcomm framework (default: 0)
+	grpcomm_direct_priority         	Priority of the grpcomm direct component
+	grpcomm_direct_major_version    	
+	grpcomm_direct_minor_version    	
+	grpcomm_direct_release_version  	
+	dfs                             	Default selection set of components for the dfs framework (<none> means use all components that can be found)
+	dfs_base_verbose                	Verbosity level for the dfs framework (default: 0)
+	dfs_app_major_version           	
+	dfs_app_minor_version           	
+	dfs_app_release_version         	
+	dfs_app_release_version         	
+	dfs_app_release_version         	
+	dfs_app_release_version         	
+	dfs_app_release_version         	
+	dfs_app_release_version         	
+	dfs_app_release_version         	
+	dfs_app_release_version         	
+	dfs_app_release_version         	
+	op                              	Default selection set of components for the op framework (<none> means use all components that can be found)
+	op_base_verbose                 	Verbosity level for the op framework (default: 0)
+	allocator                       	Default selection set of components for the allocator framework (<none> means use all components that can be found)
+	allocator_base_verbose          	Verbosity level for the allocator framework (default: 0)
+	allocator_basic_major_version   	
+	allocator_basic_minor_version   	
+	allocator_basic_release_version 	
+	allocator_bucket_num_buckets    	
+	allocator_bucket_major_version  	
+	allocator_bucket_minor_version  	
+	allocator_bucket_release_version	
+	rcache                          	Default selection set of components for the rcache framework (<none> means use all components that can be found)
+	rcache_base_verbose             	Verbosity level for the rcache framework (default: 0)
+	rcache_grdma_print_stats        	print registration cache usage statistics at the end of the run
+	rcache_grdma_major_version      	
+	rcache_grdma_minor_version      	
+	rcache_grdma_release_version    	
+	mpool                           	Default selection set of components for the mpool framework (<none> means use all components that can be found)
+	mpool_base_verbose              	Verbosity level for the mpool framework (default: 0)
+	mpool_base_default_hints        	Hints to use when selecting the default memory pool
+	mpool_base_default_priority     	Priority of the default mpool module
+	mpool_hugepage_priority         	Default priority of the hugepage mpool component (default: 50)
+	mpool_hugepage_page_size        	Default huge page size of the hugepage mpool component (default: 2M)
+	mpool_hugepage_major_version    	
+	mpool_hugepage_minor_version    	
+	mpool_hugepage_release_version  	
+	bml                             	Default selection set of components for the bml framework (<none> means use all components that can be found)
+	bml_base_verbose                	Verbosity level for the bml framework (default: 0)
+	bml_r2_show_unreach_errors      	Show error message when procs are unreachable
+	bml_r2_major_version            	
+	bml_r2_minor_version            	
+	bml_r2_release_version          	
+	btl                             	Default selection set of components for the btl framework (<none> means use all components that can be found)
+	btl_base_verbose                	Verbosity level for the btl framework (default: 0)
+	btl_base_thread_multiple_override	Enable BTLs that are not normally enabled when MPI_THREAD_MULTIPLE is enabled (THIS IS FOR DEVELOPERS ONLY!  SHOULD NOT BE USED BY END USERS!)
+	btl_base_include                	
+	btl_base_exclude                	
+	btl_base_warn_component_unused  	This parameter is used to turn on warning messages when certain NICs are not used
+	btl_self_free_list_num          	Number of fragments by default
+	btl_self_free_list_max          	Maximum number of fragments
+	btl_self_free_list_inc          	Increment by this number of fragments
+	btl_self_exclusivity            	BTL exclusivity (must be >= 0)
+	btl_self_flags                  	BTL bit flags (general flags: send, put, get, in-place, hetero-rdma, atomics, fetching-atomics)
+	btl_self_atomic_flags           	BTL atomic support flags
+	btl_self_rndv_eager_limit       	Size (in bytes, including header) of "phase 1" fragment sent for all large messages (must be >= 0 and <= eager_limit)
+	btl_self_eager_limit            	Maximum size (in bytes, including header) of "short" messages (must be >= 1).
+	btl_self_get_limit              	Maximum size (in bytes) for btl get
+	btl_self_get_alignment          	Alignment required for btl get
+	btl_self_put_limit              	Maximum size (in bytes) for btl put
+	btl_self_put_alignment          	Alignment required for btl put
+	btl_self_max_send_size          	Maximum size (in bytes) of a single "phase 2" fragment of a long message when using the pipeline protocol (must be >= 1)
+	btl_self_rdma_pipeline_send_length	Length of the "phase 2" portion of a large message (in bytes) when using the pipeline protocol.  This part of the message will be split into fragments of size max_send_size and sent using send/receive semantics (must be >= 0; only relevant when the PUT flag is set)
+	btl_self_rdma_pipeline_frag_size	Maximum size (in bytes) of a single "phase 3" fragment from a long message when using the pipeline protocol.  These fragments will be sent using RDMA semantics (must be >= 1; only relevant when the PUT flag is set)
+	btl_self_min_rdma_pipeline_size 	Messages smaller than this size (in bytes) will not use the RDMA pipeline protocol.  Instead, they will be split into fragments of max_send_size and sent using send/receive semantics (must be >=0, and is automatically adjusted up to at least (eager_limit+btl_rdma_pipeline_send_length); only relevant when the PUT flag is set)
+	btl_self_latency                	Approximate latency of interconnect (0 = auto-detect value at run-time [not supported in all BTL modules], >= 1 = latency in microseconds)
+	btl_self_bandwidth              	Approximate maximum bandwidth of interconnect (0 = auto-detect value at run-time [not supported in all BTL modules], >= 1 = bandwidth in Mbps)
+	btl_self_major_version          	
+	btl_self_minor_version          	
+	btl_self_release_version        	
+	btl_openib_verbose              	Output some verbose OpenIB BTL information (0 = no output, nonzero = output)
+	btl_openib_warn_no_device_params_found	Warn when no device-specific parameters are found in the INI file specified by the btl_openib_device_param_files MCA parameter (0 = do not warn; any other value = warn)
+	btl_openib_warn_no_hca_params_found	Warn when no device-specific parameters are found in the INI file specified by the btl_openib_device_param_files MCA parameter (0 = do not warn; any other value = warn)
+	btl_openib_warn_default_gid_prefix	Warn when there is more than one active ports and at least one of them connected to the network with only default GID prefix configured (0 = do not warn; any other value = warn)
+	btl_openib_warn_nonexistent_if  	Warn if non-existent devices and/or ports are specified in the btl_openib_if_[in|ex]clude MCA parameters (0 = do not warn; any other value = warn)
+	btl_openib_abort_not_enough_reg_mem	If there is not enough registered memory available on the system for Open MPI to function properly, Open MPI will issue a warning.  If this MCA parameter is set to true, then Open MPI will also abort all MPI jobs (0 = warn, but do not abort; any other value = warn and abort)
+	btl_openib_poll_cq_batch        	Retrieve up to poll_cq_batch completions from CQ
+	btl_openib_device_param_files   	Colon-delimited list of INI-style files that contain device vendor/part-specific parameters (use semicolon for Windows)
+	btl_openib_hca_param_files      	Colon-delimited list of INI-style files that contain device vendor/part-specific parameters (use semicolon for Windows)
+	btl_openib_device_type          	Specify to only use IB or iWARP network adapters (infiniband = only use InfiniBand HCAs; iwarp = only use iWARP NICs; all = use any available adapters)
+	btl_openib_allow_ib             	Override policy since Open MPI 4.0 of ignoring IB HCAs for openib BTL
+	btl_openib_max_btls             	Maximum number of device ports to use (-1 = use all available, otherwise must be >= 1)
+	btl_openib_free_list_num        	Initial size of free lists (must be >= 1)
+	btl_openib_free_list_max        	Maximum size of free lists (-1 = infinite, otherwise must be >= 0)
+	btl_openib_free_list_inc        	Increment size of free lists (must be >= 1)
+	btl_openib_mpool_hints          	hints for selecting a memory pool (default: none)
+	btl_openib_rcache               	Name of the registration cache to be used (it is unlikely that you will ever want to change this)
+	btl_openib_reg_mru_len          	Length of the registration cache most recently used list (must be >= 1)
+	btl_openib_cq_size              	Minimum size of the OpenFabrics completion queue (CQs are automatically sized based on the number of peer MPI processes; this value determines the *minimum* size of all CQs)
+	btl_openib_ib_cq_size           	Minimum size of the OpenFabrics completion queue (CQs are automatically sized based on the number of peer MPI processes; this value determines the *minimum* size of all CQs)
+	btl_openib_max_inline_data      	Maximum size of inline data segment (-1 = run-time probe to discover max value, otherwise must be >= 0). If not explicitly set, use max_inline_data from the INI file containing device-specific parameters
+	btl_openib_ib_max_inline_data   	Maximum size of inline data segment (-1 = run-time probe to discover max value, otherwise must be >= 0). If not explicitly set, use max_inline_data from the INI file containing device-specific parameters
+	btl_openib_pkey                 	OpenFabrics partition key (pkey) value. Unsigned integer decimal or hex values are allowed (e.g., "3" or "0x3f") and will be masked against the maximum allowable IB partition key value (0x7fff)
+	btl_openib_ib_pkey_val          	OpenFabrics partition key (pkey) value. Unsigned integer decimal or hex values are allowed (e.g., "3" or "0x3f") and will be masked against the maximum allowable IB partition key value (0x7fff)
+	btl_openib_psn                  	OpenFabrics packet sequence starting number (must be >= 0)
+	btl_openib_ib_psn               	OpenFabrics packet sequence starting number (must be >= 0)
+	btl_openib_ib_qp_ous_rd_atom    	InfiniBand outstanding atomic reads (must be >= 0)
+	btl_openib_mtu                  	OpenFabrics MTU, in bytes (if not specified in INI files).  Valid values are: 1=256 bytes, 2=512 bytes, 3=1024 bytes, 4=2048 bytes, 5=4096 bytes
+	btl_openib_ib_mtu               	OpenFabrics MTU, in bytes (if not specified in INI files).  Valid values are: 1=256 bytes, 2=512 bytes, 3=1024 bytes, 4=2048 bytes, 5=4096 bytes
+	btl_openib_ib_min_rnr_timer     	InfiniBand minimum "receiver not ready" timer, in seconds (must be >= 0 and <= 31)
+	btl_openib_ib_timeout           	InfiniBand transmit timeout, plugged into formula: 4.096 microseconds * (2^btl_openib_ib_timeout) (must be >= 0 and <= 31)
+	btl_openib_ib_retry_count       	InfiniBand transmit retry count (must be >= 0 and <= 7)
+	btl_openib_ib_rnr_retry         	InfiniBand "receiver not ready" retry count; applies *only* to SRQ/XRC queues.  PP queues use RNR retry values of 0 because Open MPI performs software flow control to guarantee that RNRs never occur (must be >= 0 and <= 7; 7 = "infinite")
+	btl_openib_ib_max_rdma_dst_ops  	InfiniBand maximum pending RDMA destination operations (must be >= 0)
+	btl_openib_ib_service_level     	InfiniBand service level (must be >= 0 and <= 15)
+	btl_openib_use_eager_rdma       	Use RDMA for eager messages (-1 = use device default, 0 = do not use eager RDMA, 1 = use eager RDMA)
+	btl_openib_eager_rdma_threshold 	Use RDMA for short messages after this number of messages are received from a given peer (must be >= 1)
+	btl_openib_max_eager_rdma       	Maximum number of peers allowed to use RDMA for short messages (RDMA is used for all long messages, except if explicitly disabled, such as with the "dr" pml) (must be >= 0)
+	btl_openib_eager_rdma_num       	Number of RDMA buffers to allocate for small messages (must be >= 1)
+	btl_openib_btls_per_lid         	Number of BTLs to create for each InfiniBand LID (must be >= 1)
+	btl_openib_max_lmc              	Maximum number of LIDs to use for each device port (must be >= 0, where 0 = use all available)
+	btl_openib_enable_apm_over_lmc  	Maximum number of alternative paths for each device port (must be >= -1, where 0 = disable apm, -1 = all available alternative paths )
+	btl_openib_enable_apm_over_ports	Enable alternative path migration (APM) over different ports of the same device (must be >= 0, where 0 = disable APM over ports, 1 = enable APM over ports of the same device)
+	btl_openib_use_async_event_thread	If nonzero, use the thread that will handle InfiniBand asynchronous events
+	btl_openib_enable_srq_resize    	Enable/Disable on demand SRQ resize. (0 = without resizing, nonzero = with resizing)
+	btl_openib_rroce_enable         	Enable/Disable routing between different subnets(0 = disable, nonzero = enable)
+	btl_openib_buffer_alignment     	Preferred communication buffer alignment, in bytes (must be > 0 and power of two)
+	btl_openib_use_message_coalescing	If nonzero, use message coalescing
+	btl_openib_cq_poll_ratio        	How often to poll high priority CQ versus low priority CQ
+	btl_openib_eager_rdma_poll_ratio	How often to poll eager RDMA channel versus CQ
+	btl_openib_hp_cq_poll_per_progress	Max number of completion events to process for each call of BTL progress engine
+	btl_openib_max_hw_msg_size      	Maximum size (in bytes) of a single fragment of a long message when using the RDMA protocols (must be > 0 and <= hw capabilities).
+	btl_openib_allow_max_memory_registration	Allow maximum possible memory to register with HCA
+	btl_openib_memory_registration_verbose	Output some verbose memory registration information (0 = no output, nonzero = output)
+	btl_openib_ignore_locality      	Ignore any locality information and use all devices (0 = use locality informaiton and use only close devices, nonzero = ignore locality information)
+	btl_openib_have_fork_support    	Whether the OpenFabrics stack supports applications that invoke the "fork()" system call or not (0 = no, 1 = yes). Note that this value does NOT indicate whether the system being run on supports "fork()" with OpenFabrics applications or not.
+	btl_openib_exclusivity          	BTL exclusivity (must be >= 0)
+	btl_openib_flags                	BTL bit flags (general flags: send, put, get, in-place, hetero-rdma, atomics, fetching-atomics)
+	btl_openib_atomic_flags         	BTL atomic support flags
+	btl_openib_rndv_eager_limit     	Size (in bytes, including header) of "phase 1" fragment sent for all large messages (must be >= 0 and <= eager_limit)
+	btl_openib_eager_limit          	Maximum size (in bytes, including header) of "short" messages (must be >= 1).
+	btl_openib_get_limit            	Maximum size (in bytes) for btl get
+	btl_openib_get_alignment        	Alignment required for btl get
+	btl_openib_put_limit            	Maximum size (in bytes) for btl put
+	btl_openib_put_alignment        	Alignment required for btl put
+	btl_openib_max_send_size        	Maximum size (in bytes) of a single "phase 2" fragment of a long message when using the pipeline protocol (must be >= 1)
+	btl_openib_rdma_pipeline_send_length	Length of the "phase 2" portion of a large message (in bytes) when using the pipeline protocol.  This part of the message will be split into fragments of size max_send_size and sent using send/receive semantics (must be >= 0; only relevant when the PUT flag is set)
+	btl_openib_rdma_pipeline_frag_size	Maximum size (in bytes) of a single "phase 3" fragment from a long message when using the pipeline protocol.  These fragments will be sent using RDMA semantics (must be >= 1; only relevant when the PUT flag is set)
+	btl_openib_min_rdma_pipeline_size	Messages smaller than this size (in bytes) will not use the RDMA pipeline protocol.  Instead, they will be split into fragments of max_send_size and sent using send/receive semantics (must be >=0, and is automatically adjusted up to at least (eager_limit+btl_rdma_pipeline_send_length); only relevant when the PUT flag is set)
+	btl_openib_latency              	Approximate latency of interconnect (0 = auto-detect value at run-time [not supported in all BTL modules], >= 1 = latency in microseconds)
+	btl_openib_bandwidth            	Approximate maximum bandwidth of interconnect (0 = auto-detect value at run-time [not supported in all BTL modules], >= 1 = bandwidth in Mbps)
+	btl_openib_receive_queues       	Colon-delimited, comma-delimited list of receive queues: P,4096,8,6,4:P,32768,8,6,4
+	btl_openib_if_include           	Comma-delimited list of devices/ports to be used (e.g. "mthca0,mthca1:2"; empty value means to use all ports found).  Mutually exclusive with btl_openib_if_exclude.
+	btl_openib_if_exclude           	Comma-delimited list of device/ports to be excluded (empty value means to not exclude any ports).  Mutually exclusive with btl_openib_if_include.
+	btl_openib_ipaddr_include       	Comma-delimited list of IP Addresses to be used (e.g. "192.168.1.0/24").  Mutually exclusive with btl_openib_ipaddr_exclude.
+	btl_openib_ipaddr_exclude       	Comma-delimited list of IP Addresses to be excluded (e.g. "192.168.1.0/24").  Mutually exclusive with btl_openib_ipaddr_include.
+	btl_openib_gid_index            	GID index to use on verbs device ports
+	btl_openib_allow_different_subnets	Allow connecting processes from different IB subnets.(0 = do not allow; 1 = allow)
+	btl_openib_cpc_include          	Method used to select OpenFabrics connections (valid values: rdmacm,udcm)
+	btl_openib_cpc_exclude          	Method used to exclude OpenFabrics connections (valid values: rdmacm,udcm)
+	btl_openib_connect_rdmacm_priority	The selection method priority for rdma_cm
+	btl_openib_connect_rdmacm_port  	The selection method port for rdma_cm
+	btl_openib_connect_rdmacm_resolve_timeout	The timeout (in miliseconds) for address and route resolution
+	btl_openib_connect_rdmacm_retry_count	Maximum number of times rdmacm will retry route resolution
+	btl_openib_connect_rdmacm_reject_causes_connect_error	The drivers for some devices are buggy such that an RDMA REJECT action may result in a CONNECT_ERROR event instead of a REJECTED event.  Setting this MCA parameter to true tells Open MPI to treat CONNECT_ERROR events on connections where a REJECT is expected as a REJECT (default: false)
+	btl_openib_connect_udcm_priority	Priority of the udcm connection method
+	btl_openib_connect_udcm_recv_count	Number of registered buffers to post
+	btl_openib_connect_udcm_timeout 	Ack timeout for udcm connection messages
+	btl_openib_connect_udcm_max_retry	Maximum number of times to retry sending a udcm connection message
+	btl_openib_major_version        	
+	btl_openib_minor_version        	
+	btl_openib_release_version      	
+	btl_tcp_links                   	
+	btl_tcp_if_include              	Comma-delimited list of devices and/or CIDR notation of networks to use for MPI communication (e.g., "eth0,192.168.0.0/16").  Mutually exclusive with btl_tcp_if_exclude.
+	btl_tcp_if_exclude              	Comma-delimited list of devices and/or CIDR notation of networks to NOT use for MPI communication -- all devices not matching these specifications will be used (e.g., "eth0,192.168.0.0/16").  If set to a non-default value, it is mutually exclusive with btl_tcp_if_include.
+	btl_tcp_free_list_num           	
+	btl_tcp_free_list_max           	
+	btl_tcp_free_list_inc           	
+	btl_tcp_sndbuf                  	The size of the send buffer socket option for each connection.  Modern TCP stacks generally are smarter than a fixed size and in some situations setting a buffer size explicitly can actually lower performance.  0 means the tcp btl will not try to set a send buffer size.
+	btl_tcp_rcvbuf                  	The size of the receive buffer socket option for each connection.  Modern TCP stacks generally are smarter than a fixed size and in some situations setting a buffer size explicitly can actually lower performance.  0 means the tcp btl will not try to set a send buffer size.
+	btl_tcp_endpoint_cache          	The size of the internal cache for each TCP connection. This cache is used to reduce the number of syscalls, by replacing them with memcpy. Every read will read the expected data plus the amount of the endpoint_cache
+	btl_tcp_use_nagle               	Whether to use Nagle's algorithm or not (using Nagle's algorithm may increase short message latency)
+	btl_tcp_port_min_v4             	The minimum port where the TCP BTL will try to bind (default 1024)
+	btl_tcp_port_range_v4           	The number of ports where the TCP BTL will try to bind (default 64511). This parameter together with the port min, define a range of ports where Open MPI will open sockets.
+	btl_tcp_progress_thread         	
+	btl_tcp_warn_all_unfound_interfaces	Issue a warning for all unfound interfaces included in if_exclude
+	btl_tcp_exclusivity             	BTL exclusivity (must be >= 0)
+	btl_tcp_flags                   	BTL bit flags (general flags: send, put, get, in-place, hetero-rdma, atomics, fetching-atomics)
+	btl_tcp_atomic_flags            	BTL atomic support flags
+	btl_tcp_rndv_eager_limit        	Size (in bytes, including header) of "phase 1" fragment sent for all large messages (must be >= 0 and <= eager_limit)
+	btl_tcp_eager_limit             	Maximum size (in bytes, including header) of "short" messages (must be >= 1).
+	btl_tcp_put_limit               	Maximum size (in bytes) for btl put
+	btl_tcp_put_alignment           	Alignment required for btl put
+	btl_tcp_max_send_size           	Maximum size (in bytes) of a single "phase 2" fragment of a long message when using the pipeline protocol (must be >= 1)
+	btl_tcp_rdma_pipeline_send_length	Length of the "phase 2" portion of a large message (in bytes) when using the pipeline protocol.  This part of the message will be split into fragments of size max_send_size and sent using send/receive semantics (must be >= 0; only relevant when the PUT flag is set)
+	btl_tcp_rdma_pipeline_frag_size 	Maximum size (in bytes) of a single "phase 3" fragment from a long message when using the pipeline protocol.  These fragments will be sent using RDMA semantics (must be >= 1; only relevant when the PUT flag is set)
+	btl_tcp_min_rdma_pipeline_size  	Messages smaller than this size (in bytes) will not use the RDMA pipeline protocol.  Instead, they will be split into fragments of max_send_size and sent using send/receive semantics (must be >=0, and is automatically adjusted up to at least (eager_limit+btl_rdma_pipeline_send_length); only relevant when the PUT flag is set)
+	btl_tcp_latency                 	Approximate latency of interconnect (0 = auto-detect value at run-time [not supported in all BTL modules], >= 1 = latency in microseconds)
+	btl_tcp_bandwidth               	Approximate maximum bandwidth of interconnect (0 = auto-detect value at run-time [not supported in all BTL modules], >= 1 = bandwidth in Mbps)
+	btl_tcp_disable_family          	
+	btl_tcp_major_version           	
+	btl_tcp_minor_version           	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	btl_tcp_release_version         	
+	memory                          	Default selection set of components for the memory framework (<none> means use all components that can be found)
+	memory_base_verbose             	Verbosity level for the memory framework (default: 0)
+	memory_patcher_priority         	Priority of the patcher memory hook component
+	memory_patcher_major_version    	
+	memory_patcher_minor_version    	
+	memory_patcher_release_version  	
+	patcher                         	Default selection set of components for the patcher framework (<none> means use all components that can be found)
+	patcher_base_verbose            	Verbosity level for the patcher framework (default: 0)
+	patcher_overwrite_priority      	Priority of the overwrite binary patcher component
+	patcher_overwrite_major_version 	
+	patcher_overwrite_minor_version 	
+	patcher_overwrite_release_version	
+	btl_openib_bandwidth_mlx4_0     	
+	btl_openib_bandwidth_mlx4_0:1   	
+	btl_openib_bandwidth_mlx4_0:1:807	
+	btl_openib_latency_mlx4_0       	
+	btl_openib_latency_mlx4_0:1     	
+	btl_openib_latency_mlx4_0:1:807 	
+	btl_tcp_bandwidth_enp4s0f0      	
+	btl_tcp_latency_enp4s0f0        	
+	btl_tcp_bandwidth_enp4s0f0:0    	
+	btl_tcp_latency_enp4s0f0:0      	
+	btl_tcp_bandwidth_ib0           	
+	btl_tcp_latency_ib0             	
+	btl_tcp_bandwidth_ib0:0         	
+	btl_tcp_latency_ib0:0           	
+	pml                             	Default selection set of components for the pml framework (<none> means use all components that can be found)
+	pml_base_verbose                	Verbosity level for the pml framework (default: 0)
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_base_bsend_allocator        	
+	pml_ucx_priority                	Priority of the UCX component
+	pml_ucx_num_disconnect          	How may disconnects go in parallel
+	opal_common_ucx_verbose         	Verbose level of the UCX components
+	opal_common_ucx_progress_iterations	Set number of calls of internal UCX progress calls per opal_progress call
+	opal_common_ucx_opal_mem_hooks  	Use OPAL memory hooks, instead of UCX internal memory hooks
+	pml_ucx_verbose                 	Verbose level of the UCX components
+	pml_ucx_progress_iterations     	Set number of calls of internal UCX progress calls per opal_progress call
+	pml_ucx_opal_mem_hooks          	Use OPAL memory hooks, instead of UCX internal memory hooks
+	pml_ucx_major_version           	
+	pml_ucx_minor_version           	
+	pml_ucx_release_version         	
+	pml_ucx_release_version         	
+	pml_ucx_release_version         	
+	pml_ucx_release_version         	
+	vprotocol                       	Specify a specific vprotocol to use
+	vprotocol                       	Specify a specific vprotocol to use
+	vprotocol                       	Specify a specific vprotocol to use
+	vprotocol                       	Specify a specific vprotocol to use
+	mtl                             	Default selection set of components for the mtl framework (<none> means use all components that can be found)
+	mtl_base_verbose                	Verbosity level for the mtl framework (default: 0)
+	vprotocol_base_verbose          	Verbosity level for the vprotocol framework (default: 0)
+	vprotocol_pessimist_priority    	
+	vprotocol_pessimist_free_list_num	
+	vprotocol_pessimist_free_list_max	
+	vprotocol_pessimist_free_list_inc	
+	vprotocol_pessimist_sender_based_chunk	
+	vprotocol_pessimist_event_buffer_size	
+	vprotocol_pessimist_sender_based_file	
+	vprotocol_pessimist_major_version	
+	vprotocol_pessimist_minor_version	
+	vprotocol_pessimist_release_version	
+	coll                            	Default selection set of components for the coll framework (<none> means use all components that can be found)
+	coll_base_verbose               	Verbosity level for the coll framework (default: 0)
+	coll_basic_priority             	Priority of the basic coll component
+	coll_basic_crossover            	Minimum number of processes in a communicator before using the logarithmic algorithms
+	coll_basic_major_version        	
+	coll_basic_minor_version        	
+	coll_basic_release_version      	
+	coll_inter_priority             	Priority of the inter coll component
+	coll_inter_verbose              	Turn verbose message of the inter coll component on/off
+	coll_inter_major_version        	
+	coll_inter_minor_version        	
+	coll_inter_release_version      	
+	coll_libnbc_priority            	Priority of the libnbc coll component
+	coll_libnbc_ibcast_skip_dt_decision	In ibcast only use size of communicator to choose algorithm, exclude data type signature. Set to 'false' to use data type signature in decision. WARNING: If you set this to 'false' then your application should not use non-uniform data type signatures in calls to ibcast.
+	coll_libnbc_major_version       	
+	coll_libnbc_minor_version       	
+	coll_libnbc_release_version     	
+	coll_self_priority              	
+	coll_self_major_version         	
+	coll_self_minor_version         	
+	coll_self_release_version       	
+	coll_sm_priority                	Priority of the sm coll component
+	coll_sm_control_size            	Length of the control data -- should usually be either the length of a cache line on most SMPs, or the size of a page on machines that support direct memory affinity page placement (in bytes)
+	coll_sm_fragment_size           	Fragment size (in bytes) used for passing data through shared memory (will be rounded up to the nearest control_size size)
+	coll_sm_comm_in_use_flags       	Number of "in use" flags, used to mark a message passing area segment as currently being used or not (must be >= 2 and <= comm_num_segments)
+	coll_sm_comm_num_segments       	Number of segments in each communicator's shared memory message passing area (must be >= 2, and must be a multiple of comm_in_use_flags)
+	coll_sm_tree_degree             	Degree of the tree for tree-based operations (must be => 1 and <= min(control_size, 255))
+	coll_sm_info_num_procs          	Number of processes to use for the calculation of the shared_mem_size MCA information parameter (must be => 2)
+	coll_sm_shared_mem_used_data    	Amount of shared memory used, per communicator, in the shared memory data area for info_num_procs processes (in bytes)
+	coll_sm_major_version           	
+	coll_sm_minor_version           	
+	coll_sm_release_version         	
+	coll_sync_priority              	Priority of the sync coll component; only relevant if barrier_before or barrier_after is > 0
+	coll_sync_barrier_before        	Do a synchronization before each Nth collective
+	coll_sync_barrier_after         	Do a synchronization after each Nth collective
+	coll_sync_major_version         	
+	coll_sync_minor_version         	
+	coll_sync_release_version       	
+	coll_tuned_priority             	Priority of the tuned coll component
+	coll_tuned_init_tree_fanout     	Inital fanout used in the tree topologies for each communicator. This is only an initial guess, if a tuned collective needs a different fanout for an operation, it build it dynamically. This parameter is only for the first guess and might save a little time
+	coll_tuned_init_chain_fanout    	Inital fanout used in the chain (fanout followed by pipeline) topologies for each communicator. This is only an initial guess, if a tuned collective needs a different fanout for an operation, it build it dynamically. This parameter is only for the first guess and might save a little time
+	coll_tuned_alltoall_small_msg   	threshold (if supported) to decide if small MSGs alltoall algorithm will be used
+	coll_tuned_alltoall_intermediate_msg	threshold (if supported) to decide if intermediate MSGs alltoall algorithm will be used
+	coll_tuned_use_dynamic_rules    	Switch used to decide if we use static (compiled/if statements) or dynamic (built at runtime) decision function rules
+	coll_tuned_dynamic_rules_filename	Filename of configuration file that contains the dynamic (@runtime) decision function rules
+	coll_tuned_allreduce_algorithm_count	Number of allreduce algorithms available
+	coll_tuned_allreduce_algorithm  	Which allreduce algorithm is used. Can be locked down to any of: 0 ignore, 1 basic linear, 2 nonoverlapping (tuned reduce + tuned bcast), 3 recursive doubling, 4 ring, 5 segmented ring
+	coll_tuned_allreduce_algorithm_segmentsize	Segment size in bytes used by default for allreduce algorithms. Only has meaning if algorithm is forced and supports segmenting. 0 bytes means no segmentation.
+	coll_tuned_allreduce_algorithm_tree_fanout	Fanout for n-tree used for allreduce algorithms. Only has meaning if algorithm is forced and supports n-tree topo based operation.
+	coll_tuned_allreduce_algorithm_chain_fanout	Fanout for chains used for allreduce algorithms. Only has meaning if algorithm is forced and supports chain topo based operation.
+	coll_tuned_alltoall_algorithm_count	Number of alltoall algorithms available
+	coll_tuned_alltoall_algorithm   	Which alltoall algorithm is used. Can be locked down to choice of: 0 ignore, 1 basic linear, 2 pairwise, 3: modified bruck, 4: linear with sync, 5:two proc only.
+	coll_tuned_alltoall_algorithm_segmentsize	Segment size in bytes used by default for alltoall algorithms. Only has meaning if algorithm is forced and supports segmenting. 0 bytes means no segmentation.
+	coll_tuned_alltoall_algorithm_tree_fanout	Fanout for n-tree used for alltoall algorithms. Only has meaning if algorithm is forced and supports n-tree topo based operation.
+	coll_tuned_alltoall_algorithm_chain_fanout	Fanout for chains used for alltoall algorithms. Only has meaning if algorithm is forced and supports chain topo based operation.
+	coll_tuned_alltoall_algorithm_max_requests	Maximum number of outstanding send or recv requests.  Only has meaning for synchronized algorithms.
+	coll_tuned_allgather_algorithm_count	Number of allgather algorithms available
+	coll_tuned_allgather_algorithm  	Which allallgather algorithm is used. Can be locked down to choice of: 0 ignore, 1 basic linear, 2 bruck, 3 recursive doubling, 4 ring, 5 neighbor exchange, 6: two proc only.
+	coll_tuned_allgather_algorithm_segmentsize	Segment size in bytes used by default for allgather algorithms. Only has meaning if algorithm is forced and supports segmenting. 0 bytes means no segmentation. Currently, available algorithms do not support segmentation.
+	coll_tuned_allgather_algorithm_tree_fanout	Fanout for n-tree used for allgather algorithms. Only has meaning if algorithm is forced and supports n-tree topo based operation. Currently, available algorithms do not support n-tree topologies.
+	coll_tuned_allgather_algorithm_chain_fanout	Fanout for chains used for allgather algorithms. Only has meaning if algorithm is forced and supports chain topo based operation. Currently, available algorithms do not support chain topologies.
+	coll_tuned_allgatherv_algorithm_count	Number of allgatherv algorithms available
+	coll_tuned_allgatherv_algorithm 	Which allallgatherv algorithm is used. Can be locked down to choice of: 0 ignore, 1 default (allgathervv + bcast), 2 bruck, 3 ring, 4 neighbor exchange, 5: two proc only.
+	coll_tuned_allgatherv_algorithm_segmentsize	Segment size in bytes used by default for allgatherv algorithms. Only has meaning if algorithm is forced and supports segmenting. 0 bytes means no segmentation. Currently, available algorithms do not support segmentation.
+	coll_tuned_allgatherv_algorithm_tree_fanout	Fanout for n-tree used for allgatherv algorithms. Only has meaning if algorithm is forced and supports n-tree topo based operation. Currently, available algorithms do not support n-tree topologies.
+	coll_tuned_allgatherv_algorithm_chain_fanout	Fanout for chains used for allgatherv algorithms. Only has meaning if algorithm is forced and supports chain topo based operation. Currently, available algorithms do not support chain topologies.
+	coll_tuned_alltoallv_algorithm_count	Number of alltoallv algorithms available
+	coll_tuned_alltoallv_algorithm  	Which alltoallv algorithm is used. Can be locked down to choice of: 0 ignore, 1 basic linear, 2 pairwise.
+	coll_tuned_barrier_algorithm_count	Number of barrier algorithms available
+	coll_tuned_barrier_algorithm    	Which barrier algorithm is used. Can be locked down to choice of: 0 ignore, 1 linear, 2 double ring, 3: recursive doubling 4: bruck, 5: two proc only, 6: tree
+	coll_tuned_bcast_algorithm_count	Number of bcast algorithms available
+	coll_tuned_bcast_algorithm      	Which bcast algorithm is used. Can be locked down to choice of: 0 ignore, 1 basic linear, 2 chain, 3: pipeline, 4: split binary tree, 5: binary tree, 6: binomial tree, 7: knomial tree, 8: scatter_allgather, 9: scatter_allgather_ring.
+	coll_tuned_bcast_algorithm_segmentsize	Segment size in bytes used by default for bcast algorithms. Only has meaning if algorithm is forced and supports segmenting. 0 bytes means no segmentation.
+	coll_tuned_bcast_algorithm_tree_fanout	Fanout for n-tree used for bcast algorithms. Only has meaning if algorithm is forced and supports n-tree topo based operation.
+	coll_tuned_bcast_algorithm_chain_fanout	Fanout for chains used for bcast algorithms. Only has meaning if algorithm is forced and supports chain topo based operation.
+	coll_tuned_bcast_algorithm_knomial_radix	k-nomial tree radix for the bcast algorithm (radix > 1).
+	coll_tuned_reduce_algorithm_count	Number of reduce algorithms available
+	coll_tuned_reduce_algorithm     	Which reduce algorithm is used. Can be locked down to choice of: 0 ignore, 1 linear, 2 chain, 3 pipeline, 4 binary, 5 binomial, 6 in-order binary, 7 rabenseifner
+	coll_tuned_reduce_algorithm_segmentsize	Segment size in bytes used by default for reduce algorithms. Only has meaning if algorithm is forced and supports segmenting. 0 bytes means no segmentation.
+	coll_tuned_reduce_algorithm_tree_fanout	Fanout for n-tree used for reduce algorithms. Only has meaning if algorithm is forced and supports n-tree topo based operation.
+	coll_tuned_reduce_algorithm_chain_fanout	Fanout for chains used for reduce algorithms. Only has meaning if algorithm is forced and supports chain topo based operation.
+	coll_tuned_reduce_algorithm_max_requests	Maximum number of outstanding send requests on leaf nodes. 0 means no limit.
+	coll_tuned_reduce_scatter_algorithm_count	Number of reduce_scatter algorithms available
+	coll_tuned_reduce_scatter_algorithm	Which reduce reduce_scatter algorithm is used. Can be locked down to choice of: 0 ignore, 1 non-overlapping (Reduce + Scatterv), 2 recursive halving, 3 ring, 4 butterfly
+	coll_tuned_reduce_scatter_algorithm_segmentsize	Segment size in bytes used by default for reduce_scatter algorithms. Only has meaning if algorithm is forced and supports segmenting. 0 bytes means no segmentation.
+	coll_tuned_reduce_scatter_algorithm_tree_fanout	Fanout for n-tree used for reduce_scatter algorithms. Only has meaning if algorithm is forced and supports n-tree topo based operation.
+	coll_tuned_reduce_scatter_algorithm_chain_fanout	Fanout for chains used for reduce_scatter algorithms. Only has meaning if algorithm is forced and supports chain topo based operation.
+	coll_tuned_reduce_scatter_block_algorithm_count	Number of reduce_scatter_block algorithms available
+	coll_tuned_reduce_scatter_block_algorithm	Which reduce reduce_scatter_block algorithm is used. Can be locked down to choice of: 0 ignore, 1 basic_linear, 2 recursive_doubling, 3 recursive_halving, 4 butterfly
+	coll_tuned_reduce_scatter_block_algorithm_segmentsize	Segment size in bytes used by default for reduce_scatter_block algorithms. Only has meaning if algorithm is forced and supports segmenting. 0 bytes means no segmentation.
+	coll_tuned_reduce_scatter_block_algorithm_tree_fanout	Fanout for n-tree used for reduce_scatter_block algorithms. Only has meaning if algorithm is forced and supports n-tree topo based operation.
+	coll_tuned_gather_algorithm_count	Number of gather algorithms available
+	coll_tuned_gather_algorithm     	Which gather algorithm is used. Can be locked down to choice of: 0 ignore, 1 basic linear, 2 binomial, 3 linear with synchronization.
+	coll_tuned_gather_algorithm_segmentsize	Segment size in bytes used by default for gather algorithms. Only has meaning if algorithm is forced and supports segmenting. 0 bytes means no segmentation. Currently, available algorithms do not support segmentation.
+	coll_tuned_gather_algorithm_tree_fanout	Fanout for n-tree used for gather algorithms. Only has meaning if algorithm is forced and supports n-tree topo based operation. Currently, available algorithms do not support n-tree topologies.
+	coll_tuned_gather_algorithm_chain_fanout	Fanout for chains used for gather algorithms. Only has meaning if algorithm is forced and supports chain topo based operation. Currently, available algorithms do not support chain topologies.
+	coll_tuned_scatter_algorithm_count	Number of scatter algorithms available
+	coll_tuned_scatter_algorithm    	Which scatter algorithm is used. Can be locked down to choice of: 0 ignore, 1 basic linear, 2 binomial.
+	coll_tuned_scatter_algorithm_segmentsize	Segment size in bytes used by default for scatter algorithms. Only has meaning if algorithm is forced and supports segmenting. 0 bytes means no segmentation. Currently, available algorithms do not support segmentation.
+	coll_tuned_scatter_algorithm_tree_fanout	Fanout for n-tree used for scatter algorithms. Only has meaning if algorithm is forced and supports n-tree topo based operation. Currently, available algorithms do not support n-tree topologies.
+	coll_tuned_scatter_algorithm_chain_fanout	Fanout for chains used for scatter algorithms. Only has meaning if algorithm is forced and supports chain topo based operation. Currently, available algorithms do not support chain topologies.
+	coll_tuned_exscan_algorithm_count	Number of exscan algorithms available
+	coll_tuned_exscan_algorithm     	Which exscan algorithm is used. Can be locked down to choice of: 0 ignore, 1 linear, 2 recursive_doubling
+	coll_tuned_scan_algorithm_count 	Number of scan algorithms available
+	coll_tuned_scan_algorithm       	Which scan algorithm is used. Can be locked down to choice of: 0 ignore, 1 linear, 2 recursive_doubling
+	coll_tuned_major_version        	
+	coll_tuned_minor_version        	
+	coll_tuned_release_version      	
+	osc                             	Default selection set of components for the osc framework (<none> means use all components that can be found)
+	osc_base_verbose                	Verbosity level for the osc framework (default: 0)
+	osc_sm_backing_directory        	Directory to place backing files for shared memory windows. This directory should be on a local filesystem such as /tmp or /dev/shm (default: (linux) /dev/shm, (others) session directory)
+	osc_sm_major_version            	
+	osc_sm_minor_version            	
+	osc_sm_release_version          	
+	osc_pt2pt_no_locks              	Enable optimizations available only if MPI_LOCK is not used.  Info key of same name overrides this value.
+	osc_pt2pt_buffer_size           	Data transfers smaller than this limit may be coalesced before being transferred (default: 8k)
+	osc_pt2pt_receive_count         	Number of receives to post for each window for incoming fragments (default: 4)
+	osc_pt2pt_major_version         	
+	osc_pt2pt_minor_version         	
+	osc_pt2pt_release_version       	
+	osc_rdma_no_locks               	Enable optimizations available only if MPI_LOCK is not used. Info key of same name overrides this value (default: false)
+	osc_rdma_acc_single_intrinsic   	Enable optimizations for MPI_Fetch_and_op, MPI_Accumulate, etc for codes that will not use anything more than a single predefined datatype (default: false)
+	osc_rdma_acc_use_amo            	Enable the use of network atomic memory operations when using single intrinsic optimizations. If not set network compare-and-swap will be used instread (default: true)
+	osc_rdma_buffer_size            	Size of temporary buffers (default: 32768)
+	osc_rdma_max_attach             	Maximum number of buffers that can be attached to a dynamic window. Keep in mind that each attached buffer will use a potentially limited resource (default: 32)
+	osc_rdma_priority               	Priority of the osc/rdma component (default: 101)
+	osc_rdma_locking_mode           	Locking mode to use for passive-target synchronization (default: two_level)
+	osc_rdma_btls                   	Comma-delimited list of BTL component names to allow without verifying connectivity. Do not add a BTL to to this list unless it can reach all processes in any communicator used with an MPI window (default: openib,ugni,uct,ucp)
+	osc_rdma_mtls                   	Comma-delimited list of MTL component names to lower the priority of rdma osc component favoring pt2pt osc (default: psm2)
+	osc_rdma_backing_directory      	Directory to place backing files for memory windows. This directory should be on a local filesystem such as /tmp or /dev/shm (default: (linux) /dev/shm, (others) session directory)
+	osc_rdma_major_version          	
+	osc_rdma_minor_version          	
+	osc_rdma_release_version        	
+	osc_ucx_priority                	Priority of the osc/ucx component (default: 60)
+	osc_ucx_verbose                 	Verbose level of the UCX components
+	osc_ucx_progress_iterations     	Set number of calls of internal UCX progress calls per opal_progress call
+	osc_ucx_opal_mem_hooks          	Use OPAL memory hooks, instead of UCX internal memory hooks
+	osc_ucx_major_version           	
+	osc_ucx_minor_version           	
+	osc_ucx_release_version         	
+	ompi_cr_verbose                 	Verbose output for the OMPI Checkpoint/Restart functionality
+	compress                        	Default selection set of components for the compress framework (<none> means use all components that can be found)
+	compress_base_verbose           	Verbosity level for the compress framework (default: 0)
+	compress_bzip_priority          	Priority of the COMPRESS bzip component (default: 10)
+	compress_bzip_verbose           	Verbose level for the COMPRESS bzip component
+	compress_bzip_major_version     	
+	compress_bzip_minor_version     	
+	compress_bzip_release_version   	
+	compress_gzip_priority          	Priority of the COMPRESS gzip component (default: 15)
+	compress_gzip_verbose           	Verbose level for the COMPRESS gzip component
+	compress_gzip_major_version     	
+	compress_gzip_minor_version     	
+	compress_gzip_release_version   	
+	crs                             	Default selection set of components for the crs framework (<none> means use all components that can be found)
+	crs_base_verbose                	Verbosity level for the crs framework (default: 0)
+	crs_base_do_not_select          	Do not do the selection of the CRS component
+	crs_none_priority               	Priority of the crs none component
+	crs_none_select_warning         	Enable warning when the 'none' component is selected when checkpoint/restart functionality is requested.[Default = disabled/no-warning]
+	crs_none_major_version          	
+	crs_none_minor_version          	
+	crs_none_release_version        	
+	pstat                           	Default selection set of components for the pstat framework (<none> means use all components that can be found)
+	pstat_base_verbose              	Verbosity level for the pstat framework (default: 0)
+	pstat_linux_major_version       	
+	pstat_linux_minor_version       	
+	pstat_linux_release_version     	
+	filem                           	Default selection set of components for the filem framework (<none> means use all components that can be found)
+	filem_base_verbose              	Verbosity level for the filem framework (default: 0)
+	filem_raw_flatten_directory_trees	Put all files in the working directory instead of creating their respective directory trees
+	filem_raw_major_version         	
+	filem_raw_minor_version         	
+	filem_raw_release_version       	
+	iof                             	Default selection set of components for the iof framework (<none> means use all components that can be found)
+	iof_base_verbose                	Verbosity level for the iof framework (default: 0)
+	iof_base_output_limit           	Maximum backlog of output messages [default: unlimited]
+	iof_base_redirect_app_stderr_to_stdout	Redirect application stderr to stdout at source (default: false)
+	iof_hnp_major_version           	
+	iof_hnp_minor_version           	
+	iof_hnp_release_version         	
+	iof_orted_major_version         	
+	iof_orted_minor_version         	
+	iof_orted_release_version       	
+	iof_tool_major_version          	
+	iof_tool_minor_version          	
+	iof_tool_release_version        	
+	notifier                        	Default selection set of components for the notifier framework (<none> means use all components that can be found)
+	notifier_base_verbose           	Verbosity level for the notifier framework (default: 0)
+	notifier_base_use_progress_thread	Use a dedicated progress thread for notifications [default: false]
+	notifier_base_severity_level    	Report all events at or above this severity [default: error]
+	notifier_base_default_actions   	Report all events to the default actions:NONE,syslog,smtp
+	notifier_base_emerg_event_actions	Report emergency events to the specified actions: example 'smtp'
+	notifier_base_alert_event_actions	Report alert events to the specified actions: example 'smtp'
+	notifier_base_crit_event_actions	Report critical events to the specified actions: example 'syslog'
+	notifier_base_warn_event_actions	Report warning events to the specified actions: example 'syslog'
+	notifier_base_notice_event_actions	Report notice events to the specified actions: example 'syslog'
+	notifier_base_info_event_actions	Report info events to the specified actions: example 'syslog'
+	notifier_base_debug_event_actions	Report debug events to the specified actions: example 'syslog'
+	notifier_base_error_event_actions	Report error events to the specified actions: example 'syslog'
+	notifier_syslog_major_version   	
+	notifier_syslog_minor_version   	
+	notifier_syslog_release_version 	
+	odls                            	Default selection set of components for the odls framework (<none> means use all components that can be found)
+	odls_base_verbose               	Verbosity level for the odls framework (default: 0)
+	odls_base_sigkill_timeout       	Time to wait for a process to die after issuing a kill signal to it
+	odls_base_max_threads           	Maximum number of threads to use for spawning local procs
+	odls_base_num_threads           	Specific number of threads to use for spawning local procs
+	odls_base_cutoff                	Minimum number of local procs before using thread pool for spawn
+	odls_base_signal_direct_children_only	Whether to restrict signals (e.g., SIGTERM) to direct children, or to apply them as well to any children spawned by those processes
+	odls_default_major_version      	
+	odls_default_minor_version      	
+	odls_default_release_version    	
+	odls_pspawn_major_version       	
+	odls_pspawn_minor_version       	
+	odls_pspawn_release_version     	
+	plm                             	Default selection set of components for the plm framework (<none> means use all components that can be found)
+	plm_base_verbose                	Verbosity level for the plm framework (default: 0)
+	plm_base_node_regex_threshold   	Only pass the node regex on the orted command line if smaller than this threshold
+	plm_isolated_major_version      	
+	plm_isolated_minor_version      	
+	plm_isolated_release_version    	
+	plm_rsh_num_concurrent          	How many plm_rsh_agent instances to invoke concurrently (must be > 0)
+	plm_rsh_force_rsh               	Force the launcher to always use rsh
+	plm_rsh_disable_qrsh            	Disable the use of qrsh when under the Grid Engine parallel environment
+	plm_rsh_daemonize_qrsh          	Daemonize the orted under the Grid Engine parallel environment
+	plm_rsh_disable_llspawn         	Disable the use of llspawn when under the LoadLeveler environment
+	plm_rsh_daemonize_llspawn       	Daemonize the orted when under the LoadLeveler environment
+	plm_rsh_priority                	Priority of the rsh plm component
+	plm_rsh_delay                   	Delay between invocations of the remote agent (sec[:usec])
+	plm_rsh_no_tree_spawn           	If set to true, do not launch via a tree-based topology
+	plm_rsh_agent                   	The command used to launch executables on remote nodes (typically either "ssh" or "rsh")
+	pls_rsh_agent                   	The command used to launch executables on remote nodes (typically either "ssh" or "rsh")
+	orte_rsh_agent                  	The command used to launch executables on remote nodes (typically either "ssh" or "rsh")
+	plm_rsh_assume_same_shell       	If set to true, assume that the shell on the remote node is the same as the shell on the local node.  Otherwise, probe for what the remote shell [default: 1]
+	orte_assume_same_shell          	If set to true, assume that the shell on the remote node is the same as the shell on the local node.  Otherwise, probe for what the remote shell [default: 1]
+	plm_rsh_pass_environ_mca_params 	If set to false, do not include mca params from the environment on the orted cmd line
+	plm_rsh_args                    	Arguments to add to rsh/ssh
+	plm_rsh_pass_libpath            	Prepend the specified library path to the remote shell's LD_LIBRARY_PATH
+	plm_rsh_major_version           	
+	plm_rsh_minor_version           	
+	plm_rsh_release_version         	
+	plm_slurm_args                  	Custom arguments to srun
+	plm_slurm_warning               	Turn off warning message
+	plm_slurm_major_version         	
+	plm_slurm_minor_version         	
+	plm_slurm_release_version       	
+	ras                             	Default selection set of components for the ras framework (<none> means use all components that can be found)
+	ras_base_verbose                	Verbosity level for the ras framework (default: 0)
+	ras_base_multiplier             	Simulate a larger cluster by launching N daemons/node
+	ras_base_launch_orted_on_hn     	Launch an orte daemon on the head node
+	ras_simulator_slots             	Comma-separated list of number of slots on each node to simulate
+	ras_simulator_max_slots         	Comma-separated list of number of max slots on each node to simulate
+	ras_simulator_num_nodes         	Comma-separated list of number of nodes to simulate for each topology
+	ras_simulator_topo_files        	Comma-separated list of files containing xml topology descriptions for simulated nodes
+	ras_simulator_topologies        	Comma-separated list of topology descriptions for simulated nodes
+	ras_simulator_have_cpubind      	Topology supports binding to cpus
+	ras_simulator_have_membind      	Topology supports binding to memory
+	ras_simulator_major_version     	
+	ras_simulator_minor_version     	
+	ras_simulator_release_version   	
+	ras_slurm_dyn_allocate_timeout  	Number of seconds to wait for Slurm dynamic allocation
+	ras_slurm_enable_dyn_alloc      	Whether or not dynamic allocations are enabled
+	ras_slurm_config_file           	Path to Slurm configuration file
+	ras_slurm_enable_rolling_alloc  	Enable partial dynamic allocations
+	ras_slurm_use_entire_allocation 	Use entire allocation (not just job step nodes) for this application
+	ras_slurm_major_version         	
+	ras_slurm_minor_version         	
+	ras_slurm_release_version       	
+	regx                            	Default selection set of components for the regx framework (<none> means use all components that can be found)
+	regx_base_verbose               	Verbosity level for the regx framework (default: 0)
+	regx_fwd_major_version          	
+	regx_fwd_minor_version          	
+	regx_fwd_release_version        	
+	regx_reverse_major_version      	
+	regx_reverse_minor_version      	
+	regx_reverse_release_version    	
+	rmaps                           	Default selection set of components for the rmaps framework (<none> means use all components that can be found)
+	rmaps_base_verbose              	Verbosity level for the rmaps framework (default: 0)
+	rmaps_base_pernode              	Launch one ppn as directed
+	rmaps_ppr_pernode               	Launch one ppn as directed
+	rmaps_base_n_pernode            	Launch n procs/node
+	rmaps_ppr_n_pernode             	Launch n procs/node
+	rmaps_base_n_persocket          	Launch n procs/socket
+	rmaps_ppr_n_persocket           	Launch n procs/socket
+	rmaps_base_pattern              	Comma-separated list of number of processes on a given resource type [default: none]
+	rmaps_ppr_pattern               	Comma-separated list of number of processes on a given resource type [default: none]
+	rmaps_base_mapping_policy       	Mapping Policy [slot | hwthread | core (default:np<=2) | l1cache | l2cache | l3cache | socket (default:np>2) | numa | board | node | seq | dist | ppr], with allowed modifiers :PE=y,SPAN,OVERSUBSCRIBE,NOOVERSUBSCRIBE
+	rmaps_base_schedule_policy      	Mapping Policy [slot | hwthread | core (default:np<=2) | l1cache | l2cache | l3cache | socket (default:np>2) | numa | board | node | seq | dist | ppr], with allowed modifiers :PE=y,SPAN,OVERSUBSCRIBE,NOOVERSUBSCRIBE
+	rmaps_base_ranking_policy       	Ranking Policy [slot (default:np<=2) | hwthread | core | l1cache | l2cache | l3cache | socket (default:np>2) | numa | board | node], with modifier :SPAN or :FILL
+	rmaps_base_bycore               	Whether to map and rank processes round-robin by core
+	rmaps_base_byslot               	Whether to map and rank processes round-robin by slot
+	rmaps_base_bynode               	Whether to map and rank processes round-robin by node
+	rmaps_base_cpus_per_proc        	Number of cpus to use for each rank [1-2**15 (default=1)]
+	rmaps_base_cpus_per_rank        	Number of cpus to use for each rank [1-2**15 (default=1)]
+	rmaps_dist_device               	If specified, map processes near to this device. Any device name that is identified by the lstopo hwloc utility as Net or OpenFabrics (for example eth0, mlx4_0, etc) or special name as auto 
+	rmaps_base_no_schedule_local    	If false, allow scheduling MPI applications on the same node as mpirun (default).  If true, do not schedule any MPI applications on the same node as mpirun
+	rmaps_base_no_oversubscribe     	If true, then do not allow oversubscription of nodes - mpirun will return an error if there aren't enough nodes to launch all processes without oversubscribing
+	rmaps_base_oversubscribe        	If true, then allow oversubscription of nodes and overloading of processing elements
+	rmaps_base_display_map          	Whether to display the process map after it is computed
+	rmaps_base_display_devel_map    	Whether to display a developer-detail process map after it is computed
+	rmaps_base_display_topo_with_map	Whether to display the topology with the map
+	rmaps_base_display_diffable_map 	Whether to display a diffable process map after it is computed
+	rmaps_base_topology             	hwloc topology file (xml format) describing the topology of the compute nodes [default: none]
+	rmaps_base_inherit              	Whether child jobs shall inherit launch directives
+	rmaps_mindist_priority          	Priority of the mindist rmaps component
+	rmaps_mindist_major_version     	
+	rmaps_mindist_minor_version     	
+	rmaps_mindist_release_version   	
+	rmaps_ppr_priority              	Priority of the ppr rmaps component
+	rmaps_ppr_major_version         	
+	rmaps_ppr_minor_version         	
+	rmaps_ppr_release_version       	
+	rmaps_rank_file_priority        	Priority of the rank_file rmaps component
+	rmaps_rank_file_path            	Name of the rankfile to be used for mapping processes (relative or absolute path)
+	orte_rankfile                   	Name of the rankfile to be used for mapping processes (relative or absolute path)
+	rmaps_rank_file_physical        	Rankfile contains physical cpu designations
+	rmaps_rank_file_major_version   	
+	rmaps_rank_file_minor_version   	
+	rmaps_rank_file_release_version 	
+	rmaps_resilient_priority        	Priority of the resilient rmaps component
+	rmaps_resilient_fault_grp_file  	Filename that contains a description of fault groups for this system
+	rmaps_resilient_major_version   	
+	rmaps_resilient_minor_version   	
+	rmaps_resilient_release_version 	
+	rmaps_round_robin_priority      	Priority of the rr rmaps component
+	rmaps_round_robin_major_version 	
+	rmaps_round_robin_minor_version 	
+	rmaps_round_robin_release_version	
+	rmaps_seq_priority              	Priority of the seq rmaps component
+	rmaps_seq_major_version         	
+	rmaps_seq_minor_version         	
+	rmaps_seq_release_version       	
+	rtc                             	Default selection set of components for the rtc framework (<none> means use all components that can be found)
+	rtc_base_verbose                	Verbosity level for the rtc framework (default: 0)
+	rtc_hwloc_priority              	Priority of the HWLOC rtc component
+	rtc_hwloc_vmhole                	Kind of VM hole to identify - none, begin, biggest, libs, heap, stack (default=biggest)
+	rtc_hwloc_major_version         	
+	rtc_hwloc_minor_version         	
+	rtc_hwloc_release_version       	
+	snapc                           	Default selection set of components for the snapc framework (<none> means use all components that can be found)
+	snapc_base_verbose              	Verbosity level for the snapc framework (default: 0)
+	snapc_base_only_one_seq         	Only store the most recent checkpoint sequence. [Default = disabled]
+	sstore                          	Default selection set of components for the sstore framework (<none> means use all components that can be found)
+	sstore_base_verbose             	Verbosity level for the sstore framework (default: 0)
+	sstore_base_global_snapshot_dir 	The base directory to use when storing global snapshots
+	snapc_base_global_snapshot_dir  	The base directory to use when storing global snapshots
+	sstore_base_global_snapshot_ref 	The global snapshot reference to be used for this job.  [Default = ompi_global_snapshot_MPIRUNPID.ckpt]
+	snapc_base_global_snapshot_ref  	The global snapshot reference to be used for this job.  [Default = ompi_global_snapshot_MPIRUNPID.ckpt]
+	crcp                            	Default selection set of components for the crcp framework (<none> means use all components that can be found)
+	crcp_base_verbose               	Verbosity level for the crcp framework (default: 0)
+	fbtl                            	Default selection set of components for the fbtl framework (<none> means use all components that can be found)
+	fbtl_base_verbose               	Verbosity level for the fbtl framework (default: 0)
+	fbtl_posix_major_version        	
+	fbtl_posix_minor_version        	
+	fbtl_posix_release_version      	
+	fcoll                           	Default selection set of components for the fcoll framework (<none> means use all components that can be found)
+	fcoll_base_verbose              	Verbosity level for the fcoll framework (default: 0)
+	fcoll_dynamic_priority          	Priority of the dynamic fcoll component
+	fcoll_dynamic_major_version     	
+	fcoll_dynamic_minor_version     	
+	fcoll_dynamic_release_version   	
+	fcoll_dynamic_gen2_priority     	Priority of the dynamic_gen2 fcoll component
+	fcoll_dynamic_gen2_num_groups   	Number of subgroups created by the dynamic_gen2 component
+	fcoll_dynamic_gen2_write_chunksize	Chunk size written at once. Default: stripe_size of the file system
+	fcoll_dynamic_gen2_major_version	
+	fcoll_dynamic_gen2_minor_version	
+	fcoll_dynamic_gen2_release_version	
+	fcoll_individual_priority       	Priority of the individual fcoll component
+	fcoll_individual_major_version  	
+	fcoll_individual_minor_version  	
+	fcoll_individual_release_version	
+	fcoll_two_phase_priority        	Priority of the two_phase fcoll component
+	fcoll_two_phase_major_version   	
+	fcoll_two_phase_minor_version   	
+	fcoll_two_phase_release_version 	
+	fcoll_vulcan_priority           	Priority of the vulcan fcoll component
+	fcoll_vulcan_num_groups         	Number of subgroups created by the vulcan component
+	fcoll_vulcan_write_chunksize    	Chunk size written at once. Default: stripe_size of the file system
+	fcoll_vulcan_async_io           	Asynchronous I/O support options. 0: Automatic choice (default) 1: Asynchronous I/O only. 2: Synchronous I/O only.
+	fcoll_vulcan_major_version      	
+	fcoll_vulcan_minor_version      	
+	fcoll_vulcan_release_version    	
+	fs                              	Default selection set of components for the fs framework (<none> means use all components that can be found)
+	fs_base_verbose                 	Verbosity level for the fs framework (default: 0)
+	fs_lustre_priority              	Priority of the lustre fs component
+	fs_lustre_stripe_size           	stripe size of a file over lustre
+	fs_lustre_stripe_width          	stripe count of a file over lustre
+	fs_lustre_major_version         	
+	fs_lustre_minor_version         	
+	fs_lustre_release_version       	
+	fs_ufs_priority                 	Priority of the fs ufs component
+	fs_ufs_lock_algorithm           	Locking algorithm used by the fs ufs component.  0: auto (default), 1: skip locking, 2: always lock entire file, 3: lock only specific ranges
+	fs_ufs_major_version            	
+	fs_ufs_minor_version            	
+	fs_ufs_release_version          	
+	io                              	Default selection set of components for the io framework (<none> means use all components that can be found)
+	io_base_verbose                 	Verbosity level for the io framework (default: 0)
+	io_ompio_priority               	Priority of the io ompio component
+	io_ompio_delete_priority        	Delete priority of the io ompio component
+	io_ompio_record_file_offset_info	The information of the file offset/length
+	io_ompio_coll_timing_info       	Enable collective algorithm timing information
+	io_ompio_cycle_buffer_size      	Data size issued by individual reads/writes per call
+	io_ompio_bytes_per_agg          	Size of temporary buffer for collective I/O operations
+	io_ompio_num_aggregators        	number of aggregators for collective I/O operations
+	io_ompio_grouping_option        	Option for grouping of processes in the aggregator selection 1: Data volume based grouping 2: maximizing group size uniformity 3: maximimze data contiguity 4: hybrid optimization  5: simple (default) 6: skip refinement step 7: simple+: grouping based on default file view
+	io_ompio_max_aggregators_ratio  	Maximum number of processes that can be an aggregator expressed as the ratio to the number of process used to open the file i.e 1 out of n processes can be an aggregator, with n being specified by this mca parameter.
+	io_ompio_aggregators_cutoff_threshold	Relativ cutoff threshold for incrementing the number of aggregators in the simple aggregator selection algorithm (5). Lower value for this parameter will lead to higher no. of aggregators.
+	io_ompio_overwrite_amode        	Overwrite WRONLY amode to RDWR to enable data sieving 1: allow overwrite (default) 0: do not overwrite amode provided by application 
+	io_ompio_verbose_info_parsing   	Provide visual output when parsing info objects 0: no verbose output (default) 1: verbose output by rank 0 2: verbose output by all ranks 
+	io_ompio_major_version          	
+	io_ompio_minor_version          	
+	io_ompio_release_version        	
+	io_romio321_priority            	Priority of the io romio component
+	io_romio321_delete_priority     	Delete priority of the io romio component
+	io_romio321_version             	Version of ROMIO
+	io_romio321_user_configure_params	User-specified command line parameters passed to ROMIO's configure script
+	io_romio321_complete_configure_params	Complete set of command line parameters passed to ROMIO's configure script
+	io_romio321_major_version       	
+	io_romio321_minor_version       	
+	io_romio321_release_version     	
+	sharedfp                        	Default selection set of components for the sharedfp framework (<none> means use all components that can be found)
+	sharedfp_base_verbose           	Verbosity level for the sharedfp framework (default: 0)
+	sharedfp_individual_priority    	Priority of the individual sharedfp component
+	sharedfp_individual_verbose     	Verbosity of the individual sharedfp component
+	sharedfp_individual_major_version	
+	sharedfp_individual_minor_version	
+	sharedfp_individual_release_version	
+	sharedfp_lockedfile_priority    	Priority of the lockedfile sharedfp component
+	sharedfp_lockedfile_verbose     	Verbosity of the lockedfile sharedfp component
+	sharedfp_lockedfile_major_version	
+	sharedfp_lockedfile_minor_version	
+	sharedfp_lockedfile_release_version	
+	sharedfp_sm_priority            	Priority of the sm sharedfp component
+	sharedfp_sm_verbose             	Verbosity of the sm sharedfp component
+	sharedfp_sm_major_version       	
+	sharedfp_sm_minor_version       	
+	sharedfp_sm_release_version     	
+	topo                            	Default selection set of components for the topo framework (<none> means use all components that can be found)
+	topo_base_verbose               	Verbosity level for the topo framework (default: 0)
+	topo_basic_major_version        	
+	topo_basic_minor_version        	
+	topo_basic_release_version      	
+	topo_treematch_reorder_mode     	If set the reordering will be done in a partially distributed way (default=0). If partially-distributed only local knowledge will be used, possibly leading to less accurate reordering.
+	topo_treematch_major_version    	
+	topo_treematch_minor_version    	
+	topo_treematch_release_version  	

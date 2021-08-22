@@ -1,0 +1,36 @@
+sdumont1244
+sdumont1244
+	linux-vdso.so.1 =>  (0x00007fff2bfeb000)
+	libmpi.so.40 => /scratch/app/openmpi/4.0_gnu/lib/libmpi.so.40 (0x00002b3d4907f000)
+	libpthread.so.0 => /usr/lib64/libpthread.so.0 (0x00002b3d49534000)
+	libc.so.6 => /usr/lib64/libc.so.6 (0x00002b3d49750000)
+	liblustreapi.so => /usr/lib64/liblustreapi.so (0x00002b3d49b1d000)
+	libopen-rte.so.40 => /scratch/app/openmpi/4.0_gnu/lib/libopen-rte.so.40 (0x00002b3d49d4f000)
+	libopen-pal.so.40 => /scratch/app/openmpi/4.0_gnu/lib/libopen-pal.so.40 (0x00002b3d4a085000)
+	libucp.so.0 => /usr/lib64/libucp.so.0 (0x00002b3d4a5ca000)
+	libucm.so.0 => /usr/lib64/libucm.so.0 (0x00002b3d4a812000)
+	libucs.so.0 => /usr/lib64/libucs.so.0 (0x00002b3d4aa24000)
+	libuct.so.0 => /usr/lib64/libuct.so.0 (0x00002b3d4ad78000)
+	librdmacm.so.1 => /usr/lib64/librdmacm.so.1 (0x00002b3d4affc000)
+	libibverbs.so.1 => /usr/lib64/libibverbs.so.1 (0x00002b3d4b218000)
+	libpmi2.so.0 => /usr/lib64/libpmi2.so.0 (0x00002b3d4b431000)
+	libpmi.so.0 => /usr/lib64/libpmi.so.0 (0x00002b3d4b64a000)
+	libdl.so.2 => /usr/lib64/libdl.so.2 (0x00002b3d4b850000)
+	librt.so.1 => /usr/lib64/librt.so.1 (0x00002b3d4ba54000)
+	libm.so.6 => /usr/lib64/libm.so.6 (0x00002b3d4bc5c000)
+	libutil.so.1 => /usr/lib64/libutil.so.1 (0x00002b3d4bf5e000)
+	libz.so.1 => /usr/lib64/libz.so.1 (0x00002b3d4c161000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b3d48e5b000)
+	libmlx5.so.1 => /usr/lib64/libmlx5.so.1 (0x00002b3d4c377000)
+	libibcm.so.1 => /usr/lib64/libibcm.so.1 (0x00002b3d4c5d2000)
+	libnuma.so.1 => /usr/lib64/libnuma.so.1 (0x00002b3d4c7d7000)
+	libnl-route-3.so.200 => /usr/lib64/libnl-route-3.so.200 (0x00002b3d4c9e3000)
+	libnl-3.so.200 => /usr/lib64/libnl-3.so.200 (0x00002b3d4cc50000)
+	libslurm.so.31 => /usr/lib64/libslurm.so.31 (0x00002b3d4ce71000)
+	libgcc_s.so.1 => /usr/lib64/libgcc_s.so.1 (0x00002b3d4d207000)
+5 MPI Performance Variables
+	mpool_hugepage_bytes_allocated  	Number of bytes currently allocated in the mpool hugepage component
+	mpool_hugepage_bytes_allocated  	Number of bytes currently allocated in the mpool hugepage component
+	mpool_hugepage_bytes_allocated  	Number of bytes currently allocated in the mpool hugepage component
+	osc_rdma_put_retry_count        	Number of times put transaction were retried due to resource limitations
+	osc_rdma_get_retry_count        	Number of times get transaction were retried due to resource limitations

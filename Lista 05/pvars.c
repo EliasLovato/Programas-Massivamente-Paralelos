@@ -16,19 +16,19 @@ int main(int argc, char *argv[]){
 	MPI_Datatype		datatype;
 	MPI_Comm		comm;
 		
-	PMPI_Init_thread(0, 0, required, &provided);
-	PMPI_T_init_thread(required, &provided);
+	MPI_Init_thread(0, 0, required, &provided);
+	MPI_T_init_thread(required, &provided);
 		
-	PMPI_T_pvar_get_num(&num_pvar);
+	MPI_T_pvar_get_num(&num_pvar);
 	printf("%d MPI Performance Variables\n", num_pvar);
 	
 	for(i=0; i<num_pvar; i++){
 		nameLen = sizeof(name);
 		descLen = sizeof(desc);
 		
-		err = PMPI_T_pvar_get_info(i, name, &nameLen, &verbosity, &var_class, &datatype, &enumtype, desc, &descLen, &binding, &readonly, &continuous, &atomic);
+		err = MPI_T_pvar_get_info(i, name, &nameLen, &verbosity, &var_class, &datatype, &enumtype, desc, &descLen, &binding, &readonly, &continuous, &atomic);
 		
-		printf("\t%-32s\t%s\n", name, desc);
+		printf("\t%s\tClass=%d\tReadonly=%s\tContinuous=%s\tAtomic=%s\t%s\n", name, var_class, readonly ? "T" : "F", desc);
 	}
 		
 // No test on return because we're about to exit

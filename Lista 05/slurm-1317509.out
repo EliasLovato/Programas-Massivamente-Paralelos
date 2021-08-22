@@ -1,0 +1,39 @@
+sdumont1246
+sdumont1246
+	linux-vdso.so.1 =>  (0x00007fff5bae0000)
+	libmpifort.so.12 => /opt/intel/parallel_studio_xe_2020/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/libmpifort.so.12 (0x00002b2f1c01e000)
+	libmpi.so.12 => /opt/intel/parallel_studio_xe_2020/compilers_and_libraries_2020.2.254/linux/mpi/intel64/lib/release/libmpi.so.12 (0x00002b2f1c3dd000)
+	libdl.so.2 => /usr/lib64/libdl.so.2 (0x00002b2f1d5f9000)
+	librt.so.1 => /usr/lib64/librt.so.1 (0x00002b2f1d7fd000)
+	libpthread.so.0 => /usr/lib64/libpthread.so.0 (0x00002b2f1da05000)
+	libm.so.6 => /usr/lib64/libm.so.6 (0x00002b2f1dc21000)
+	libgcc_s.so.1 => /usr/lib64/libgcc_s.so.1 (0x00002b2f1df23000)
+	libc.so.6 => /usr/lib64/libc.so.6 (0x00002b2f1e139000)
+	libfabric.so.1 => /opt/intel/parallel_studio_xe_2020/compilers_and_libraries_2020.2.254/linux/mpi/intel64/libfabric/lib/libfabric.so.1 (0x00002b2f1e506000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002b2f1bdfa000)
+615 MPI Control Variables
+
+Processo: 1 - cvar: 0 
+I_MPI_DEBUG_OUTPUT              	@Default:# not defined
+ valor: 13215168 
+
+Processo: 1 - cvar: 1 
+I_MPI_DEBUG_COREDUMP            	@Default:# 1
+ valor: 12621952 
+
+Processo: 1 - cvar: 2 
+I_MPI_LIBRARY_KIND              	@Default:# not defined
+ valor: 13340608 
+615 MPI Control Variables
+
+Processo: 0 - cvar: 0 
+I_MPI_DEBUG_OUTPUT              	@Default:# not defined
+ valor: 31113296 
+
+Processo: 0 - cvar: 1 
+I_MPI_DEBUG_COREDUMP            	@Default:# 1
+ valor: 30487472 
+
+Processo: 0 - cvar: 2 
+I_MPI_LIBRARY_KIND              	@Default:# not defined
+ valor: 31105024 

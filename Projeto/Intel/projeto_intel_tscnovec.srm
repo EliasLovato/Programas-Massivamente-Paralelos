@@ -27,14 +27,6 @@ EXEC=/scratch/padinpe/elias.lovato/CAP-399/Projeto/Intel/tscnovec
 
 /usr/bin/ldd $EXEC
 
-# Configura o número de threads conforme o parâmetro acima do SLURM
-
-export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
-
-# Imprime o número de threads
-
-echo $SLURM_CPUS_PER_TASK
-
 # Executa com 1 processo e define número de threads com a opção "-c":
 
-srun -N 1 -c $SLURM_CPUS_PER_TASK $EXEC
+srun -n 1 $EXEC
